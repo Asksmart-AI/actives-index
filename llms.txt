@@ -1,8 +1,8 @@
 # Actives Index Australia
 
-> Independent index of every agricultural active constituent in the Australian APVMA register: approved sources (active constituent approvals), registrants, registered products, crops and targets on labels, and data protection end dates. Rebuilt from the APVMA PubCRIS public export (CC BY 3.0 AU). Data as of 2026-10-23. Not affiliated with the APVMA.
+> Independent index of every agricultural active constituent in the Australian APVMA register: approved sources (active constituent approvals), registrants, registered products, crops and targets on labels, and data protection end dates. Rebuilt from the APVMA PubCRIS public export (CC BY 3.0 AU). Data as of 2026-10-31. Not affiliated with the APVMA.
 
-Facts to keep when citing: an approval holder is not necessarily the manufacturer (PubCRIS does not publish manufacturing sites); data protection covers specific data, not the active; nothing here is use advice, the label applies. Cite as "Actives Index Australia, from APVMA PubCRIS data, 2026-10-23".
+Facts to keep when citing: an approval holder is not necessarily the manufacturer (PubCRIS does not publish manufacturing sites); data protection covers specific data, not the active; nothing here is use advice, the label applies. Cite as "Actives Index Australia, from APVMA PubCRIS data, 2026-10-31".
 
 ## Answers by question
 - [Actives with only 1 to 3 approved sources](https://activesindex.com/lists/few-sources): 638 actives
@@ -15,22 +15,23 @@ Facts to keep when citing: an approval holder is not necessarily the manufacture
 
 ## Each active has a page
 URL pattern: https://activesindex.com/active/<common-name>, for example https://activesindex.com/active/tebuconazole. Each page lists every approval holder with approval number and date, every registrant and product, crops and targets on the labels, and recent changes. Most-registered actives:
-- [Bifenthrin](https://activesindex.com/active/bifenthrin): 29 approved sources, 264 products
+- [Bifenthrin](https://activesindex.com/active/bifenthrin): 29 approved sources, 265 products
 - [Glyphosate Present As The Isopropylamine Salt](https://activesindex.com/active/glyphosate-present-as-the-isopropylamine-salt): 0 approved sources, 255 products
-- [Imidacloprid](https://activesindex.com/active/imidacloprid): 42 approved sources, 173 products
-- [Piperonyl Butoxide](https://activesindex.com/active/piperonyl-butoxide): 11 approved sources, 171 products
-- [MCPA Present As The Dimethylamine Salt](https://activesindex.com/active/mcpa-present-as-the-dimethylamine-salt): 0 approved sources, 151 products
-- [Tebuconazole](https://activesindex.com/active/tebuconazole): 39 approved sources, 146 products
-- [Diflufenican](https://activesindex.com/active/diflufenican): 25 approved sources, 135 products
-- [Dicamba Present As The Dimethylamine Salt](https://activesindex.com/active/dicamba-present-as-the-dimethylamine-salt): 0 approved sources, 132 products
+- [Imidacloprid](https://activesindex.com/active/imidacloprid): 43 approved sources, 173 products
+- [Piperonyl Butoxide](https://activesindex.com/active/piperonyl-butoxide): 11 approved sources, 172 products
+- [MCPA Present As The Dimethylamine Salt](https://activesindex.com/active/mcpa-present-as-the-dimethylamine-salt): 0 approved sources, 152 products
+- [Tebuconazole](https://activesindex.com/active/tebuconazole): 39 approved sources, 148 products
+- [Diflufenican](https://activesindex.com/active/diflufenican): 25 approved sources, 137 products
+- [Dicamba Present As The Dimethylamine Salt](https://activesindex.com/active/dicamba-present-as-the-dimethylamine-salt): 0 approved sources, 133 products
 - [Benzalkonium Chloride](https://activesindex.com/active/benzalkonium-chloride): 0 approved sources, 128 products
-- [Paraquat Present As Paraquat Dichloride](https://activesindex.com/active/paraquat-present-as-paraquat-dichloride): 0 approved sources, 121 products
+- [Paraquat Present As Paraquat Dichloride](https://activesindex.com/active/paraquat-present-as-paraquat-dichloride): 0 approved sources, 122 products
 - [Azoxystrobin](https://activesindex.com/active/azoxystrobin): 38 approved sources, 114 products
 - [Fipronil](https://activesindex.com/active/fipronil): 36 approved sources, 113 products
-- [Clethodim](https://activesindex.com/active/clethodim): 31 approved sources, 101 products
+- [Clethodim](https://activesindex.com/active/clethodim): 31 approved sources, 103 products
+- [Propiconazole](https://activesindex.com/active/propiconazole): 32 approved sources, 101 products
 - [Chlorine Present As Trichloroisocyanuric Acid](https://activesindex.com/active/chlorine-present-as-trichloroisocyanuric-acid): 0 approved sources, 100 products
-- [Triclopyr Present As The Butoxyethyl Ester](https://activesindex.com/active/triclopyr-present-as-the-butoxyethyl-ester): 0 approved sources, 100 products
 
 ## Data
 - [All actives as CSV](https://activesindex.com/data/actives-australia.csv): name, chemical group, approved sources, products, registrants, data protection end
+- [中文版 / Chinese](https://activesindex.com/zh/): 原药中文通用名、批准来源、持有澳洲原药批准的中国企业清单 (https://activesindex.com/zh/china)
 - [Method and definitions](https://activesindex.com/about)

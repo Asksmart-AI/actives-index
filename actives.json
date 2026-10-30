@@ -1925,7 +1925,7 @@
 "slug": "bifenthrin",
 "group": "Pyrethroids, Pyrethrins",
 "sources": 29,
-"products": 264,
+"products": 265,
 "registrants": 79,
 "prot_until": "2030-11-06"
 },
@@ -2195,8 +2195,8 @@
 "slug": "brodifacoum",
 "group": "Chromenones",
 "sources": 7,
-"products": 51,
-"registrants": 12,
+"products": 52,
+"registrants": 13,
 "prot_until": "2030-03-20"
 },
 {
@@ -2235,7 +2235,7 @@
 "slug": "bromacil",
 "group": "Acylureas",
 "sources": 6,
-"products": 11,
+"products": 12,
 "registrants": 9,
 "prot_until": "2030-10-22"
 },
@@ -2795,7 +2795,7 @@
 "slug": "captan",
 "group": "Phthalic Acids",
 "sources": 15,
-"products": 24,
+"products": 26,
 "registrants": 19,
 "prot_until": ""
 },
@@ -3045,8 +3045,8 @@
 "slug": "chlorantraniliprole",
 "group": "Benzamides",
 "sources": 47,
-"products": 51,
-"registrants": 28,
+"products": 52,
+"registrants": 29,
 "prot_until": "2033-12-12"
 },
 {
@@ -3175,9 +3175,9 @@
 "slug": "chlorine-present-as-lithium-hypochlorite",
 "group": "Mineral-Chlorine",
 "sources": 0,
-"products": 6,
+"products": 7,
 "registrants": 4,
-"prot_until": ""
+"prot_until": "2031-10-26"
 },
 {
 "n": "CHLORINE PRESENT AS SODIUM DICHLOROISOCYANURATE",
@@ -3515,7 +3515,7 @@
 "slug": "citronella-oil",
 "group": "Oil-Plant Extract",
 "sources": 0,
-"products": 31,
+"products": 41,
 "registrants": 19,
 "prot_until": ""
 },
@@ -3535,7 +3535,7 @@
 "slug": "clethodim",
 "group": "Cyclohexanedione Oximes",
 "sources": 31,
-"products": 101,
+"products": 103,
 "registrants": 59,
 "prot_until": "2029-10-11"
 },
@@ -3615,7 +3615,7 @@
 "slug": "clomazone",
 "group": "Azoles, Oxazoles, Thiazoles",
 "sources": 8,
-"products": 13,
+"products": 14,
 "registrants": 10,
 "prot_until": ""
 },
@@ -3705,7 +3705,7 @@
 "slug": "clopyralid-present-as-the-potassium-salt",
 "group": "Pyridine",
 "sources": 0,
-"products": 50,
+"products": 51,
 "registrants": 38,
 "prot_until": ""
 },
@@ -3735,7 +3735,7 @@
 "slug": "cloquintocet-mexyl",
 "group": "Phenoxy Acids",
 "sources": 17,
-"products": 66,
+"products": 67,
 "registrants": 38,
 "prot_until": "2030-08-11"
 },
@@ -4245,8 +4245,8 @@
 "slug": "copper-present-as-cuprous-oxide",
 "group": "Mineral-Copper",
 "sources": 0,
-"products": 83,
-"registrants": 9,
+"products": 96,
+"registrants": 10,
 "prot_until": "2029-04-04"
 },
 {
@@ -4255,7 +4255,7 @@
 "slug": "copper-present-as-cuprous-thiocyanate",
 "group": "Cyanide",
 "sources": 0,
-"products": 16,
+"products": 17,
 "registrants": 3,
 "prot_until": "2028-03-30"
 },
@@ -4435,7 +4435,7 @@
 "slug": "cyazofamid",
 "group": "Urea Derivatives",
 "sources": 5,
-"products": 5,
+"products": 6,
 "registrants": 3,
 "prot_until": "2029-12-11"
 },
@@ -4555,7 +4555,7 @@
 "slug": "cyphenothrin",
 "group": "Pyrethroids, Pyrethrins",
 "sources": 1,
-"products": 29,
+"products": 30,
 "registrants": 5,
 "prot_until": "2031-02-03"
 },
@@ -4665,7 +4665,7 @@
 "slug": "d-tetramethrin",
 "group": "Pyrethroid",
 "sources": 0,
-"products": 20,
+"products": 21,
 "registrants": 3,
 "prot_until": "2031-02-03"
 },
@@ -4825,8 +4825,8 @@
 "slug": "dicamba",
 "group": "Benzoic Acid And Derivatives",
 "sources": 25,
-"products": 10,
-"registrants": 9,
+"products": 11,
+"registrants": 10,
 "prot_until": "2028-05-17"
 },
 {
@@ -4915,7 +4915,7 @@
 "slug": "dicamba-present-as-the-dimethylamine-salt",
 "group": "Benzoic Acid-Arylaliphatic",
 "sources": 0,
-"products": 132,
+"products": 133,
 "registrants": 47,
 "prot_until": "2029-12-24"
 },
@@ -5145,7 +5145,7 @@
 "slug": "diflufenican",
 "group": "Anilides",
 "sources": 25,
-"products": 135,
+"products": 137,
 "registrants": 57,
 "prot_until": "2032-07-19"
 },
@@ -5175,8 +5175,8 @@
 "slug": "dimethenamid-p",
 "group": "Anilides",
 "sources": 3,
-"products": 4,
-"registrants": 1,
+"products": 5,
+"registrants": 2,
 "prot_until": "2029-01-12"
 },
 {
@@ -5475,8 +5475,8 @@
 "slug": "diuron",
 "group": "Urea Derivatives",
 "sources": 24,
-"products": 85,
-"registrants": 49,
+"products": 90,
+"registrants": 50,
 "prot_until": "2030-10-21"
 },
 {
@@ -5554,7 +5554,7 @@
 "name": "Dodine",
 "slug": "dodine",
 "group": "Guanidines",
-"sources": 5,
+"sources": 6,
 "products": 3,
 "registrants": 3,
 "prot_until": "2027-02-11"
@@ -5664,7 +5664,7 @@
 "name": "Emamectin Benzoate",
 "slug": "emamectin-benzoate",
 "group": "",
-"sources": 11,
+"sources": 12,
 "products": 2,
 "registrants": 2,
 "prot_until": "2031-03-09"
@@ -6474,7 +6474,7 @@
 "name": "Flubendiamide",
 "slug": "flubendiamide",
 "group": "",
-"sources": 6,
+"sources": 5,
 "products": 3,
 "registrants": 3,
 "prot_until": ""
@@ -6484,7 +6484,7 @@
 "name": "Fludioxonil",
 "slug": "fludioxonil",
 "group": "Azoles, Oxazoles, Thiazoles",
-"sources": 12,
+"sources": 13,
 "products": 34,
 "registrants": 14,
 "prot_until": "2032-03-23"
@@ -6535,7 +6535,7 @@
 "slug": "flumioxazin",
 "group": "Anilides",
 "sources": 12,
-"products": 34,
+"products": 35,
 "registrants": 19,
 "prot_until": "2031-04-30"
 },
@@ -6564,7 +6564,7 @@
 "name": "Fluopyram",
 "slug": "fluopyram",
 "group": "Benzamides",
-"sources": 19,
+"sources": 20,
 "products": 7,
 "registrants": 3,
 "prot_until": "2031-03-05"
@@ -6675,7 +6675,7 @@
 "slug": "fluroxypyr-as-the-methyl-heptyl-ester",
 "group": "Pyridine-Pyridinoxy",
 "sources": 0,
-"products": 76,
+"products": 77,
 "registrants": 44,
 "prot_until": "2031-01-16"
 },
@@ -7685,8 +7685,8 @@
 "slug": "imazapyr-present-as-isopropylamine-salt",
 "group": "Imidazolinone",
 "sources": 0,
-"products": 9,
-"registrants": 8,
+"products": 10,
+"registrants": 9,
 "prot_until": ""
 },
 {
@@ -7734,7 +7734,7 @@
 "name": "Imidacloprid",
 "slug": "imidacloprid",
 "group": "Guanidines",
-"sources": 42,
+"sources": 43,
 "products": 173,
 "registrants": 72,
 "prot_until": "2033-06-23"
@@ -8415,8 +8415,8 @@
 "slug": "lambda-cyhalothrin",
 "group": "Pyrethroids, Pyrethrins",
 "sources": 22,
-"products": 43,
-"registrants": 31,
+"products": 44,
+"registrants": 32,
 "prot_until": "2030-03-17"
 },
 {
@@ -8665,7 +8665,7 @@
 "slug": "mcpa-present-as-the-dimethylamine-salt",
 "group": "Phenoxy Acids-MCPA-Amine",
 "sources": 0,
-"products": 151,
+"products": 152,
 "registrants": 53,
 "prot_until": "2029-12-24"
 },
@@ -8705,7 +8705,7 @@
 "slug": "mcpa-present-as-the-potassium-salt",
 "group": "Phenoxy Acids-MCPA",
 "sources": 0,
-"products": 75,
+"products": 76,
 "registrants": 40,
 "prot_until": "2030-11-03"
 },
@@ -9015,7 +9015,7 @@
 "slug": "mecoprop-present-as-the-dimethylamine-salt",
 "group": "Phenoxy Acids-Propionics",
 "sources": 0,
-"products": 6,
+"products": 7,
 "registrants": 4,
 "prot_until": ""
 },
@@ -9634,7 +9634,7 @@
 "name": "Metribuzin",
 "slug": "metribuzin",
 "group": "Triazines, Tetrazines",
-"sources": 25,
+"sources": 24,
 "products": 47,
 "registrants": 41,
 "prot_until": "2031-01-09"
@@ -9718,6 +9718,16 @@
 "products": 2,
 "registrants": 1,
 "prot_until": "2030-07-02"
+},
+{
+"n": "MONENSIN SODIUM",
+"name": "Monensin Sodium",
+"slug": "monensin-sodium",
+"group": "Ionophores",
+"sources": 14,
+"products": 0,
+"registrants": 0,
+"prot_until": ""
 },
 {
 "n": "MONOETHYLENE GLYCOL",
@@ -10865,7 +10875,7 @@
 "slug": "paraquat-present-as-paraquat-dichloride",
 "group": "Pyridine-Bipyridyl",
 "sources": 0,
-"products": 121,
+"products": 122,
 "registrants": 47,
 "prot_until": "2030-03-21"
 },
@@ -10935,8 +10945,8 @@
 "slug": "pendimethalin",
 "group": "Dinitrobenzenes",
 "sources": 16,
-"products": 42,
-"registrants": 26,
+"products": 43,
+"registrants": 27,
 "prot_until": "2031-04-15"
 },
 {
@@ -11045,7 +11055,7 @@
 "slug": "permethrin-25-75-2",
 "group": "Pyrethroids, Pyrethrins",
 "sources": 1,
-"products": 33,
+"products": 34,
 "registrants": 18,
 "prot_until": "2027-10-04"
 },
@@ -11565,7 +11575,7 @@
 "slug": "pinoxaden",
 "group": "Azoles, Oxazoles, Thiazoles",
 "sources": 21,
-"products": 30,
+"products": 31,
 "registrants": 20,
 "prot_until": "2030-08-11"
 },
@@ -11585,7 +11595,7 @@
 "slug": "piperonyl-butoxide",
 "group": "Others",
 "sources": 11,
-"products": 171,
+"products": 172,
 "registrants": 65,
 "prot_until": "2032-10-05"
 },
@@ -11885,7 +11895,7 @@
 "slug": "potassium-salts-of-fatty-acids",
 "group": "Acid-Fatty",
 "sources": 0,
-"products": 13,
+"products": 17,
 "registrants": 7,
 "prot_until": "2030-01-13"
 },
@@ -11964,7 +11974,7 @@
 "name": "Procymidone",
 "slug": "procymidone",
 "group": "",
-"sources": 2,
+"sources": 3,
 "products": 17,
 "registrants": 13,
 "prot_until": "2027-04-11"
@@ -12115,7 +12125,7 @@
 "slug": "propiconazole",
 "group": "Triazoles",
 "sources": 32,
-"products": 99,
+"products": 101,
 "registrants": 51,
 "prot_until": "2030-10-28"
 },
@@ -12145,7 +12155,7 @@
 "slug": "propoxur",
 "group": "Carbamates",
 "sources": 4,
-"products": 3,
+"products": 4,
 "registrants": 1,
 "prot_until": "2030-01-14"
 },
@@ -12165,7 +12175,7 @@
 "slug": "propyzamide",
 "group": "Benzamides",
 "sources": 18,
-"products": 86,
+"products": 87,
 "registrants": 45,
 "prot_until": "2030-04-17"
 },
@@ -12284,7 +12294,7 @@
 "name": "Pyrasulfotole",
 "slug": "pyrasulfotole",
 "group": "Azoles, Oxazoles, Thiazoles",
-"sources": 9,
+"sources": 10,
 "products": 12,
 "registrants": 7,
 "prot_until": "2032-07-19"
@@ -12395,8 +12405,8 @@
 "slug": "pyriproxyfen",
 "group": "Pyridines",
 "sources": 12,
-"products": 45,
-"registrants": 24,
+"products": 46,
+"registrants": 25,
 "prot_until": "2031-09-27"
 },
 {
@@ -12414,9 +12424,9 @@
 "name": "Pyroxasulfone",
 "slug": "pyroxasulfone",
 "group": "Azoles, Oxazoles, Thiazoles",
-"sources": 48,
-"products": 73,
-"registrants": 41,
+"sources": 49,
+"products": 74,
+"registrants": 42,
 "prot_until": "2032-07-19"
 },
 {
@@ -12424,7 +12434,7 @@
 "name": "Pyroxsulam",
 "slug": "pyroxsulam",
 "group": "Triazoles",
-"sources": 6,
+"sources": 7,
 "products": 2,
 "registrants": 1,
 "prot_until": "2027-04-28"
@@ -12734,7 +12744,7 @@
 "name": "Saflufenacil",
 "slug": "saflufenacil",
 "group": "Acylureas",
-"sources": 26,
+"sources": 27,
 "products": 13,
 "registrants": 11,
 "prot_until": "2034-04-10"
@@ -13048,16 +13058,6 @@
 "products": 13,
 "registrants": 8,
 "prot_until": "2029-12-16"
-},
-{
-"n": "SODIUM CHLORITE",
-"name": "Sodium Chlorite",
-"slug": "sodium-chlorite",
-"group": "Mineral-Chlorine",
-"sources": 0,
-"products": 1,
-"registrants": 1,
-"prot_until": ""
 },
 {
 "n": "SODIUM DICHLOROACETATE",
@@ -13735,7 +13735,7 @@
 "slug": "tebuconazole",
 "group": "Triazoles",
 "sources": 39,
-"products": 146,
+"products": 148,
 "registrants": 65,
 "prot_until": "2031-02-05"
 },
@@ -13765,7 +13765,7 @@
 "slug": "tebuthiuron",
 "group": "Urea Derivatives",
 "sources": 15,
-"products": 33,
+"products": 34,
 "registrants": 21,
 "prot_until": "2029-06-25"
 },
@@ -13915,7 +13915,7 @@
 "slug": "tetramethrin",
 "group": "Pyrethroids, Pyrethrins",
 "sources": 4,
-"products": 35,
+"products": 36,
 "registrants": 7,
 "prot_until": "2030-01-14"
 },
@@ -14055,7 +14055,7 @@
 "slug": "thiram",
 "group": "Biscarbamates",
 "sources": 7,
-"products": 36,
+"products": 40,
 "registrants": 16,
 "prot_until": ""
 },
@@ -14815,7 +14815,7 @@
 "slug": "zinc-pyrithione",
 "group": "",
 "sources": 5,
-"products": 29,
+"products": 30,
 "registrants": 4,
 "prot_until": "2028-03-30"
 },
