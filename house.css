@@ -1,0 +1,192 @@
+/* house.css —— Kevin 口味的底子（2026-10-31，从 data/taste.jsonl 76 条反写）
+ *
+ * 页面只设三个变量就有一整套皮：--p 主色、--q 第二色、--bg 底色（可选 --font-display 只给大标题和大数字）。
+ * 其余颜色全部从这三个用 color-mix 推出来，所以 kit/reskin.py 换皮只改这三个值，版式一个字节不动。
+ *
+ * 每条配方后面写的是台账里哪句话定的，改之前先看那条：
+ *   玻璃只给浮层、正文近不透明           tax-assist 09-24「太 AI」/ direct-order 09-28 再次确认喜欢
+ *   玻璃感每版都要有                     ai-staff 10-11「每一个里面都要」
+ *   背景最多两块淡光，从一角斜进来        ai-staff 10-11「杂」「太对称像模板」→「像窗外进来的光」
+ *   主按钮同色一档釉面，不用异色渐变      ai-staff 10-11 两次否渐变 / 10-13 挑中 E 釉面
+ *   次要按钮要看得出能点                 couponer-v2 10-07「有的按钮背景很淡」
+ *   两三种颜色协调，不全灰只一点主色      ai-staff 10-11「颜色太单一了也不好看」
+ *   间距只用刻度、字离框 ≥ 8             09-30 间距标准
+ *   中文不负字距不斜体、按下缩 .97、hover 只给鼠标   10-31 收自 qiaomu 中文排版 + emil 动效细则
+ *
+ * 用法：<link rel="stylesheet" href=".../kit/house.css">（reskin.py 会把它内联进每一版），然后
+ *   :root{ --p:#00807A; --q:#3D9BFF; --bg:#FFFFFF }
+ * 组件类全部 h- 前缀；基础重置全部包 :where()，优先级为 0，页面自己的类一定盖得过。
+ */
+
+:root {
+  --p: #00807A;
+  --q: #3D9BFF;
+  --bg: #FFFFFF;
+  /* --field-2：左下回光的颜色，默认用第二色；第二色偏暖（香槟、珊瑚）时皮里改成主色，背景不铺黄光（10-01「不要偏黄」） */
+
+  /* 推出来的色：deep 用在釉面下沿和按下，soft 用在次要底，ink 用在浅底上的彩色字 */
+  --p-deep: color-mix(in oklab, var(--p), #000 16%);
+  --p-lift: color-mix(in oklab, var(--p), #fff 14%);
+  --p-soft: color-mix(in oklab, var(--p) 13%, #fff);
+  --p-line: color-mix(in oklab, var(--p) 46%, #fff);  /* 32% 在钴蓝皮的淡蓝底上看不出描边（10-31 capture 报「底色看不出」） */
+  --p-ink:  color-mix(in oklab, var(--p), #000 30%);
+  --q-soft: color-mix(in oklab, var(--q) 13%, #fff);
+  --q-ink:  color-mix(in oklab, var(--q), #000 38%);
+
+  --ink: #15181D;
+  --ink-2: #4A505A;
+  --mute: #6B7280;
+  --line: color-mix(in oklab, var(--p) 7%, #E6E9EE);
+  --surface: rgba(255, 255, 255, .94);
+  --ok: #1F8A4C;
+  --warn: #B4540A;
+  --danger: #D23A2E;
+
+  /* 间距刻度：padding / gap / margin 只用这些 */
+  --s1: 4px; --s2: 8px; --s3: 12px; --s4: 16px; --s5: 24px; --s6: 32px; --s7: 48px; --s8: 72px;
+  --r-sm: 6px; --r-md: 10px; --r-lg: 14px; --r-pill: 999px;
+  --tap: 44px;
+
+  --font-ui: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  --font-display: var(--font-ui);
+
+  /* 动效（10-31 收自 emil）：进出场 ease-out、屏上移动 ease-in-out、抽屉单独一条；按下 160ms，UI 一律 < 300ms */
+  --ease-out: cubic-bezier(.23, 1, .32, 1);
+  --ease-io: cubic-bezier(.77, 0, .175, 1);
+  --ease-drawer: cubic-bezier(.32, .72, 0, 1);
+  --t-fast: 160ms;
+  --t-ui: 240ms;
+
+  color-scheme: light;
+}
+
+/* ---------- 基础（零优先级） ---------- */
+:where(*, *::before, *::after) { box-sizing: border-box; }
+:where(html) { -webkit-text-size-adjust: 100%; }
+:where(body) {
+  margin: 0; min-height: 100vh; color: var(--ink); font: 15px/1.6 var(--font-ui);
+  background-color: var(--bg);
+  /* 一团光从右上斜进来 + 左下一点第二色回光；不对称、只有两块 */
+  background-image:
+    radial-gradient(60vw 46vw at 100% -6%, color-mix(in srgb, var(--p) 15%, transparent), transparent 70%),
+    radial-gradient(40vw 32vw at -8% 104%, color-mix(in srgb, var(--field-2, var(--q)) 11%, transparent), transparent 72%);
+  background-attachment: fixed;
+  -webkit-font-smoothing: antialiased;
+}
+/* 3% 噪点，让大片淡光不起色带 */
+:where(body)::before {
+  content: ""; position: fixed; inset: 0; pointer-events: none; z-index: 0; opacity: .035;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+}
+:where(body > *) { position: relative; z-index: 1; }
+:where(h1, h2, h3, h4, p, ul, ol, figure) { margin: 0; }
+/* 中文标题不用负字距、行高 1.3（10-31 收自 qiaomu 中文排版：负字距中文会糊）；中文不斜体，强调改字重 */
+:where(h1, h2, h3) { font-family: var(--font-display); color: var(--ink); letter-spacing: 0; line-height: 1.3; }
+:where(:lang(zh) em, :lang(zh) i, :lang(zh) cite) { font-style: normal; font-weight: 600; }
+:where(button, input, select, textarea) { font: inherit; color: inherit; }
+:where(button) { cursor: pointer; }
+:where(a) { color: var(--p-ink); text-underline-offset: 3px; }
+:where(img, svg, video) { display: block; max-width: 100%; }
+:where(:focus-visible) { outline: 2px solid var(--p); outline-offset: 2px; border-radius: var(--r-sm); }
+::selection { background: color-mix(in srgb, var(--p) 22%, transparent); }
+:where(.num, [data-num]) { font-variant-numeric: tabular-nums; font-family: var(--font-display); }
+
+/* ---------- 玻璃：只给浮层（顶栏、悬浮汇总、弹层、底栏、toast） ---------- */
+.h-glass {
+  background:
+    linear-gradient(var(--glass-fill, rgba(255, 255, 255, .62)), var(--glass-fill, rgba(255, 255, 255, .62))) padding-box,
+    linear-gradient(135deg, rgba(255, 255, 255, .95), rgba(255, 255, 255, .35) 40%, color-mix(in srgb, var(--p) 18%, rgba(255, 255, 255, .2))) border-box;
+  border: 1px solid transparent;
+  -webkit-backdrop-filter: blur(32px) saturate(180%);
+  backdrop-filter: blur(32px) saturate(180%);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, .85),
+    0 1px 2px rgba(16, 24, 40, .05),
+    0 12px 32px -8px color-mix(in srgb, var(--p) 18%, rgba(16, 24, 40, .14));
+}
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .h-glass { --glass-fill: rgba(255, 255, 255, .94); }
+}
+
+/* ---------- 正文面：近不透明（Mica 式），不玻璃叠玻璃 ---------- */
+.h-surface {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+  box-shadow: 0 1px 2px rgba(16, 24, 40, .04);
+}
+
+/* ---------- 按钮 ---------- */
+.h-btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: var(--s2);
+  min-height: var(--tap); padding: 0 var(--s5); border-radius: var(--r-md);
+  font-weight: 600; font-size: 15px; line-height: 1; white-space: nowrap; text-decoration: none;
+  color: #fff; border: 0;
+  /* 同色一档釉面：上 = 主色、下 = 深一档 + 顶边 1px 内高光。顶色不往白里提：白字对比度按顶色算，提亮会掉到 4.5 以下（10-31 青瓷 3.8:1） */
+  background: linear-gradient(180deg, var(--p), var(--p-deep));
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, .32),
+    0 1px 2px color-mix(in srgb, var(--p-deep) 30%, transparent),
+    0 6px 16px -4px color-mix(in srgb, var(--p) 40%, transparent);
+  transition: transform var(--t-fast) var(--ease-out), filter var(--t-fast) var(--ease-out), box-shadow var(--t-fast);
+}
+@media (hover: hover) and (pointer: fine) { .h-btn:hover { filter: brightness(1.05); } }
+/* 按下是缩一点，不是变色（10-14「按下变惨白」+ emil scale .97） */
+.h-btn:active { transform: scale(.97); background: var(--p-deep); }
+.h-btn:disabled, .h-btn[aria-disabled=true] { background: #E5E7EB; color: #9CA3AF; box-shadow: none; cursor: not-allowed; filter: none; }
+
+/* 次要：底色要看得出能点（有描边 + 有色底），不能淡到像禁用 */
+.h-btn-2 {
+  display: inline-flex; align-items: center; justify-content: center; gap: var(--s2);
+  min-height: var(--tap); padding: 0 var(--s4); border-radius: var(--r-md);
+  font-weight: 600; font-size: 15px; line-height: 1; white-space: nowrap; text-decoration: none;
+  color: var(--p-ink); background: var(--p-soft); border: 1px solid var(--p-line);
+  transition: background var(--t-fast), transform var(--t-fast) var(--ease-out);
+}
+@media (hover: hover) and (pointer: fine) { .h-btn-2:hover { background: color-mix(in oklab, var(--p) 17%, #fff); } }
+.h-btn-2:active { transform: scale(.97); }
+.h-btn-2[aria-pressed=true] { background: var(--p); color: #fff; border-color: var(--p); }
+
+/* 胶囊 / 筛选：选中 = 实色，没选 = 白底 + 看得见的描边 */
+.h-chip {
+  display: inline-flex; align-items: center; gap: var(--s1); min-height: 32px; padding: 0 var(--s3);
+  border-radius: var(--r-pill); font-size: 13px; font-weight: 500; white-space: nowrap;
+  color: var(--ink-2); background: #fff; border: 1px solid color-mix(in oklab, var(--p) 18%, #DADFE6);
+}
+.h-chip[aria-pressed=true], .h-chip.on { color: #fff; background: var(--p); border-color: var(--p); }
+
+/* 输入框和它旁边的按钮同高同圆角（10-04「获取验证码」） */
+.h-field {
+  min-height: var(--tap); padding: 0 var(--s3); border-radius: var(--r-md);
+  background: #fff; border: 1px solid #D5DAE1; outline: none; width: 100%;
+  transition: border-color var(--t-fast), box-shadow var(--t-fast);
+}
+.h-field:focus { border-color: var(--p); box-shadow: 0 0 0 3px color-mix(in srgb, var(--p) 18%, transparent); }
+
+/* ---------- 图标底：内容图标用 C 圆形双色（10-13），能点的动作才用实色方块 ---------- */
+.h-icon {
+  display: inline-grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; flex: none;
+  color: var(--p); background: radial-gradient(circle at 30% 25%, #fff, var(--p-soft) 70%);
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--p) 14%, transparent), inset 0 1px 0 #fff;
+}
+.h-icon.q { color: var(--q-ink); background: radial-gradient(circle at 30% 25%, #fff, var(--q-soft) 70%); box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--q) 18%, transparent), inset 0 1px 0 #fff; }
+.h-icon svg { width: 20px; height: 20px; }
+
+/* 状态小标：只用在真正要处理的那一两处 */
+.h-tag { display: inline-flex; align-items: center; min-height: 22px; padding: 0 var(--s2); border-radius: var(--r-sm); font-size: 12px; font-weight: 600; color: var(--q-ink); background: var(--q-soft); }
+.h-tag.p { color: var(--p-ink); background: var(--p-soft); }
+
+/* ---------- 无障碍回退 ---------- */
+@media (prefers-reduced-motion: reduce) {
+  /* 不是全关：留透明度和颜色过渡，去掉位移和缩放 */
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important;
+    transition-property: opacity, color, background-color, border-color, box-shadow, filter !important; }
+  .h-btn:active, .h-btn-2:active { transform: none; }
+}
+@media (prefers-reduced-transparency: reduce) {
+  .h-glass { --glass-fill: rgba(255, 255, 255, .97); -webkit-backdrop-filter: none; backdrop-filter: none; }
+}
+@media (prefers-contrast: more) {
+  .h-glass, .h-surface { border-color: #8A9099; }
+  .h-chip, .h-btn-2 { border-color: currentColor; }
+}
