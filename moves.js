@@ -111,7 +111,7 @@
   $('#sv-total').textContent = N;
 
   var stream = $('#sv-stream'), scan = $('#sv-scan'), sv = $('#sv'), state = $('#sv-state'), replay = $('#sv-replay');
-  var ROW = 52, TICK = 360, SAMPLE = 17;
+  var ROW = 52, TICK = 140, SAMPLE = 12;   // Kevin 10-31：「不要太久 快速完成 不然看晕了」→ 整段约 2 秒（原来约 7 秒）
   var H, VIS, SCAN;
   function geom() { H = stream.clientHeight; VIS = Math.floor(H / ROW); SCAN = 4 + ROW * Math.round((H / 2 - 26) / ROW); scan.style.top = (SCAN - 4) + 'px'; }
 
@@ -147,7 +147,7 @@
     var a = f.animate([{ transform: 'translate(' + x0 + 'px,' + y0 + 'px) scale(.9)', opacity: 0 },
       { transform: 'translate(' + x0 + 'px,' + y0 + 'px) scale(1)', opacity: 1, offset: .12 },
       { transform: mid, opacity: 1, offset: .6 },
-      { transform: 'translate(' + x1 + 'px,' + y1 + 'px) scale(.8)', opacity: 0 }], { duration: 700, easing: 'cubic-bezier(.22,1,.36,1)' });
+      { transform: 'translate(' + x1 + 'px,' + y1 + 'px) scale(.8)', opacity: 0 }], { duration: 380, easing: 'cubic-bezier(.22,1,.36,1)' });
     return a.finished.then(function () { f.remove(); }, function () { f.remove(); });
   }
   function bump(own) { var b = $(own ? '#sv-own' : '#sv-buy'); b.classList.add('bump'); setTimeout(function () { b.classList.remove('bump'); }, 300); }
@@ -171,7 +171,7 @@
     function tick() {
       if (i >= idx.length) {
         // 行流完了：把剩下还在扫描带上方的行推过去再收尾
-        timer = setTimeout(function () { paint({ b: buyRegs, o: ownRegs, bp: buyP, op: ownP }, N); done(); running = false; }, 700); return;
+        timer = setTimeout(function () { paint({ b: buyRegs, o: ownRegs, bp: buyP, op: ownP }, N); done(); running = false; }, 420); return;
       }
       var pi = idx[i++], el = row(prods[pi]);
       el.style.opacity = '0'; el.style.transform = 'translateY(' + (4 - ROW) + 'px)';
@@ -191,7 +191,7 @@
       timer = setTimeout(tick, TICK);
     }
     // 开场先铺满扫描带以上的几行，再往下流
-    timer = setTimeout(tick, 200);
+    timer = setTimeout(tick, 100);
   }
   replay.addEventListener('click', function () { if (!running) { clearTimeout(timer); run(); } });
   var still = location.hash === '#demo' || matchMedia('(prefers-reduced-motion: reduce)').matches;
