@@ -1,6 +1,9 @@
 // Actives Index 前端交互：搜索面板（/ 键）、首页筛选排序、表格排序、分区导航高亮、图表/表格切换、复制链接。无依赖。
 (function () {
   var base = document.body.getAttribute('data-base') || '';
+  // 双语：页面 <html lang> 是 zh-Hans 就用中文文案（中文页在 /zh/ 下，同一份脚本）
+  var ZH = (document.documentElement.lang || '').indexOf('zh') === 0;
+  var L = function (en, zh) { return ZH ? zh : en; };   // 不叫 t：下面首页筛选有 var t = 表格
   var $ = function (s, r) { return (r || document).querySelector(s); };
   var $$ = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
 
@@ -12,7 +15,7 @@
     return fetch(base + 'search.json').then(function (r) { return r.json(); }).then(function (d) { index = d; return d; });
   }
   function score(it, q) {
-    var n = it.n.toLowerCase(), g = (it.g || '').toLowerCase();
+    var n = (it.n + (it.e ? ' ' + it.e : '')).toLowerCase(), g = (it.g || '').toLowerCase();   // e = 中文页上的英文原名
     if (n === q) return 100;
     if (n.indexOf(q) === 0) return 80 + Math.min(it.p, 300) / 30;
     var i = n.indexOf(' ' + q);
@@ -26,19 +29,19 @@
   function render() {
     var q = pin.value.trim().toLowerCase();
     if (!q) {
-      plist.innerHTML = '<li class="hint">Type an active (tebuconazole), a company (Nufarm), a crop (barley) or a pest (net blotch).</li>';
+      plist.innerHTML = '<li class="hint">' + L('Type an active (tebuconazole), a company (Nufarm), a crop (barley) or a pest (net blotch).', '输入原药（戊唑醇 / tebuconazole）、公司（Nufarm）、作物（大麦）或病虫草（网斑病）。') + '</li>';
       hits = []; return;
     }
     hits = index.map(function (it) { return [score(it, q), it]; }).filter(function (x) { return x[0] > 0; })
       .sort(function (a, b) { return b[0] - a[0]; }).slice(0, 9).map(function (x) { return x[1]; });
     cur = 0;
     plist.innerHTML = hits.length ? hits.map(function (it, i) {
-      var meta = it.t === 'a' ? (it.s + ' sources, ' + it.p + ' products') : it.t === 'c' ? (it.s + ' approvals, ' + it.p + ' products') : (it.p + ' products');
+      var meta = it.t === 'a' ? L(it.s + ' sources, ' + it.p + ' products', it.s + ' 个来源，' + it.p + ' 个产品') : it.t === 'c' ? L(it.s + ' approvals, ' + it.p + ' products', it.s + ' 个批准，' + it.p + ' 个产品') : L(it.p + ' products', it.p + ' 个产品');
       return '<li role="option" aria-selected="' + (i === 0) + '"><a href="' + base + it.u + '"><span class="kind ' + it.t + '">' +
         KIND[it.t] + '</span><span class="nm">' + esc(it.n) + '</span><span class="mt">' + meta + '</span></a></li>';
-    }).join('') : '<li class="hint">No match. Try a shorter word, or the parent name (for example glyphosate, not the salt).</li>';
+    }).join('') : '<li class="hint">' + L('No match. Try a shorter word, or the parent name (for example glyphosate, not the salt).', '没有结果。换个短一点的词，或者用母体名（例如草甘膦，而不是它的盐）。') + '</li>';
   }
-  var KIND = { a: 'Active', c: 'Company', h: 'Crop', p: 'Target' };
+  var KIND = ZH ? { a: '原药', c: '公司', h: '作物', p: '防治对象' } : { a: 'Active', c: 'Company', h: 'Crop', p: 'Target' };
   function esc(s) { return s.replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
   function move(d) {
     var li = $$('[role=option]', plist); if (!li.length) return;
@@ -186,13 +189,19 @@
     tabs.forEach(function (a) { var s = document.getElementById(a.getAttribute('data-tab')); if (s) io.observe(s); });
   }
 
+  // ---------- 语言下拉：点外面或按 Esc 收起 ----------
+  $$('.langsel').forEach(function (d) {
+    document.addEventListener('click', function (e) { if (d.open && !d.contains(e.target)) d.open = false; });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && d.open) { d.open = false; $('summary', d).focus(); } });
+  });
+
   // ---------- 复制链接 ----------
   $$('[data-copy]').forEach(function (b) {
     b.addEventListener('click', function () {
       var label = $('span', b), old = label.textContent;
       (navigator.clipboard ? navigator.clipboard.writeText(location.href) : Promise.reject()).then(function () {
-        label.textContent = 'Link copied';
-      }, function () { label.textContent = 'Copy failed'; }).then(function () { setTimeout(function () { label.textContent = old; }, 1600); });
+        label.textContent = L('Link copied', '已复制链接');
+      }, function () { label.textContent = L('Copy failed', '复制失败'); }).then(function () { setTimeout(function () { label.textContent = old; }, 1600); });
     });
   });
 
@@ -211,7 +220,8 @@
         if (r.hasAttribute('data-out') || (r.hidden && tb.id !== 't')) return;
         rows.push(Array.prototype.map.call(r.cells, cell).join(','));
       });
-      var src = 'Source: APVMA PubCRIS export downloaded ' + (document.body.getAttribute('data-data') || '') + ', CC BY 3.0 AU, via Actives Index (independent, not affiliated with the APVMA)';
+      var dd = document.body.getAttribute('data-data') || '';
+      var src = L('Source: APVMA PubCRIS export downloaded ' + dd + ', CC BY 3.0 AU, via Actives Index (independent, not affiliated with the APVMA)', '来源：APVMA PubCRIS 导出，' + dd + ' 下载，CC BY 3.0 AU；Actives Index 整理（独立，与 APVMA 无关联）');
       var blob = new Blob(['﻿' + rows.join('\r\n') + '\r\n\r\n"' + src + '"\r\n'], { type: 'text/csv;charset=utf-8' });
       var a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = b.getAttribute('data-file') || 'export.csv';
       document.body.appendChild(a); a.click(); setTimeout(function () { URL.revokeObjectURL(a.href); a.remove(); }, 500);
@@ -226,13 +236,13 @@
     var key = b.getAttribute('data-watch') + ':' + b.getAttribute('data-id'), label = $('span', b);
     function paint() {
       var on = wget().some(function (x) { return x.k === key; });
-      b.setAttribute('aria-pressed', String(on)); label.textContent = on ? 'Watching' : 'Watch';
+      b.setAttribute('aria-pressed', String(on)); label.textContent = on ? L('Watching', '已关注') : L('Watch', '关注');
     }
     b.addEventListener('click', function () {
       var w = wget(), i = -1;
       w.forEach(function (x, j) { if (x.k === key) i = j; });
       if (i >= 0) w.splice(i, 1); else w.unshift({ k: key, n: b.getAttribute('data-name'), at: document.body.getAttribute('data-data') });
-      if (!wset(w)) { label.textContent = 'Browser storage is off'; return; }
+      if (!wset(w)) { label.textContent = L('Browser storage is off', '浏览器存储已关闭'); return; }
       paint();
     });
     paint();
@@ -249,12 +259,12 @@
         wl.innerHTML = w.map(function (x) {
           var it = by[x.k]; if (!it) return '';
           var isNew = it.l && seen && it.l > seen; if (isNew) fresh++;
-          var meta = it.t === 'a' ? it.s + ' sources, ' + it.p + ' products' : it.s + ' approvals, ' + it.p + ' products';
-          var last = it.l ? 'Last change ' + it.l + ', ' + it.c6 + ' in six months' : 'No change in six months';
+          var meta = it.t === 'a' ? L(it.s + ' sources, ' + it.p + ' products', it.s + ' 个来源，' + it.p + ' 个产品') : L(it.s + ' approvals, ' + it.p + ' products', it.s + ' 个批准，' + it.p + ' 个产品');
+          var last = it.l ? L('Last change ' + it.l + ', ' + it.c6 + ' in six months', '最近变化 ' + it.l + '，近半年 ' + it.c6 + ' 次') : L('No change in six months', '近半年没有变化');
           return '<li' + (isNew ? ' class="new"' : '') + '><a href="' + it.u + '"><span class="kind ' + it.t + '">' + KIND[it.t] + '</span><b>' + esc(it.n) + '</b></a><span class="mt">' + meta + '</span><span class="lc">' + (isNew ? '<i class="dot"></i>' : '') + last + '</span></li>';
         }).join('');
         var note = $('[data-watch-note]');
-        if (note) note.textContent = fresh ? fresh + ' with changes since your last visit' : 'Kept in this browser only';
+        if (note) note.textContent = fresh ? L(fresh + ' with changes since your last visit', fresh + ' 个自上次来访后有变化') : L('Kept in this browser only', '只保存在这个浏览器里');
         $('#watching').hidden = false;
       });
     }
@@ -282,7 +292,7 @@
         var a = r.getAttribute('data-a'), n = hit[a];
         r.hidden = !n; if (n) { r.removeAttribute('data-out'); r.cells[1].textContent = n; } else r.setAttribute('data-out', '');
       });
-      scope.textContent = exact !== undefined ? 'on ' + D.o[exact] : 'on ' + (uf.value.trim()) + ' (all matches)';
+      scope.textContent = exact !== undefined ? L('on ' + D.o[exact], '（' + D.o[exact] + '）') : L('on ' + uf.value.trim() + ' (all matches)', '（' + uf.value.trim() + '，全部匹配）');
       clear.hidden = false; empty.hidden = any;
     }
     Array.prototype.forEach.call(ut.tBodies[0].rows, function (r, i) { r.setAttribute('data-i', i); });

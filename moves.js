@@ -1,6 +1,10 @@
 /* 原药页三个记忆点（Kevin 10-31「都要」；手法库 kit/moves.json，原型在 design/variants/20261031-moves/）。
    顺序：数字落地（首屏，载入时播）→ 筛子（滚到「Who to talk to」时播一次）→ 端起来（只在用户按住时）。 */
 
+// 双语：中文页 <html lang="zh-Hans">，文案跟着换（Kevin 10-31：中英文页面要一样）
+var MV_ZH = (document.documentElement.lang || '').indexOf('zh') === 0;
+function MV(en, zh) { return MV_ZH ? zh : en; }
+
 // ---------- 3. 数字落地 + Watch 小胜利 ----------
 (function () {
   var t = document.getElementById('t-src'), v = document.querySelector('.verdict');
@@ -10,19 +14,16 @@
     return { name: r.cells[0].textContent.trim(), href: a ? a.getAttribute('href') : '', no: r.cells[2].textContent.trim(), d: r.cells[3].textContent.trim() };
   }).filter(function (x) { return /^\d{4}-\d{2}-\d{2}$/.test(x.d); }).sort(function (a, b) { return a.d < b.d ? -1 : a.d > b.d ? 1 : 0; });
   var N = rows.length; if (N < 3) return;
-  // 首句开头的数字换成可滚动的 span；和 #t-src 行数对不上就不演（数字一份事实）
-  var tn = v.firstChild, m = tn && tn.nodeType === 3 && tn.nodeValue.match(/^(\d+)( approved sources?)/);
-  if (!m || +m[1] !== N) return;
-  // 数字连同后面的词一起放进 span（单独一个数字的元素会被当成装饰编号）
-  tn.nodeValue = tn.nodeValue.slice(m[0].length);
-  var num = document.createElement('span'); num.className = 'mv-n'; v.insertBefore(num, tn);
-  var label = function (k) { return k + (k === 1 ? ' approved source' : ' approved sources'); };
+  // 首句里的来源数由 build.py 包在 .mv-n 里（data-n）；和 #t-src 行数对不上就不演（数字一份事实）
+  var num = v.querySelector('.mv-n');
+  if (!num || +num.getAttribute('data-n') !== N) return;
+  var label = function (k) { return MV_ZH ? k + ' 个批准来源' : k + (k === 1 ? ' approved source' : ' approved sources'); };
 
   var y0 = 1996, y1 = 2026, cols = y1 - y0 + 1;
   rows.forEach(function (r) { var y = +r.d.slice(0, 4); if (y < y0) y0 = y; });
   cols = y1 - y0 + 1;
   var strip = document.createElement('div'); strip.className = 'mv-strip';
-  strip.innerHTML = '<p class="mv-cap"><span>Approved sources by year approved</span><span>' + y0 + '–' + y1 + '</span></p>' +
+  strip.innerHTML = '<p class="mv-cap"><span>' + MV('Approved sources by year approved', '批准来源，按批准年份') + '</span><span>' + y0 + '–' + y1 + '</span></p>' +
     '<div class="mv-scroll"><div class="mv-track" style="--cols:' + cols + '"></div><div class="mv-axis" style="--cols:' + cols + '"></div></div>';
   v.parentNode.insertBefore(strip, v.nextSibling);
   var track = strip.querySelector('.mv-track'), axis = strip.querySelector('.mv-axis'), colEls = [];
@@ -33,10 +34,10 @@
   var tip = document.createElement('div'); tip.className = 'mv-tip'; tip.setAttribute('role', 'tooltip'); strip.appendChild(tip);
   var marks = rows.map(function (r, i) {
     var a = document.createElement('a'); a.className = 'mv-m'; a.href = r.href || '#';
-    a.setAttribute('aria-label', r.name + ', approval ' + r.no + ', approved ' + r.d);
+    a.setAttribute('aria-label', MV(r.name + ', approval ' + r.no + ', approved ' + r.d, r.name + '，批准号 ' + r.no + '，' + r.d + ' 批准'));
     colEls[+r.d.slice(0, 4) - y0].appendChild(a);
     function show() {
-      tip.innerHTML = '<b></b><span></span>'; tip.firstChild.textContent = r.name; tip.lastChild.textContent = 'Approval no. ' + r.no + ', approved ' + r.d;
+      tip.innerHTML = '<b></b><span></span>'; tip.firstChild.textContent = r.name; tip.lastChild.textContent = MV('Approval no. ' + r.no + ', approved ' + r.d, '批准号 ' + r.no + '，' + r.d + ' 批准');
       // 提示挂在 .mv-strip 上（不进会裁切的容器），按格子位置算
       var sr = strip.getBoundingClientRect(), mr = a.getBoundingClientRect();
       var x = Math.max(0, Math.min(mr.left - sr.left - 20, sr.width - tip.offsetWidth));
@@ -72,9 +73,9 @@
     w.addEventListener('click', function () {
       if (w.getAttribute('aria-pressed') !== 'true') { w.classList.remove('mv-win'); return; }
       var lab = w.querySelector('span'), txt = lab.textContent;
-      if (txt !== 'Watching') return;   // 存不进去（storage 关了）就不演
+      if (txt !== MV('Watching', '已关注')) return;   // 存不进去（storage 关了）就不演
       w.classList.remove('mv-win'); void w.offsetWidth; w.classList.add('mv-win');
-      saved.textContent = 'Saved in this browser';
+      saved.textContent = MV('Saved in this browser', '已保存在这个浏览器');
       saved.classList.remove('go'); void saved.offsetWidth; saved.classList.add('go');
     });
   }
@@ -86,13 +87,23 @@
   var whos0 = document.querySelector('#contact .whos'), tp = document.getElementById('t-prod'), tr = document.getElementById('t-reg');
   if (!whos0 || !tp || !tr || !document.querySelector('.who.buy') || tp.tBodies[0].rows.length < 12) return;
   var buyH = document.querySelector('.who.buy data'); if (buyH && +buyH.value === 0) return;   // 没有买家可筛就不演
-  var box = document.createElement('div'); box.innerHTML = '<div class="sv" id="sv" aria-label="Sieving this active\'s registered products by whether the registrant holds its own source approval">\n<div class="sv-head"><p class="sv-state" id="sv-state" aria-live="polite">Sieving <b id="sv-seen">0</b>&nbsp;of&nbsp;<b id="sv-total">0</b> registered products</p>\n<button class="sv-replay" type="button" id="sv-replay">Replay</button></div>\n<div class="sv-body"><div class="sv-stream" id="sv-stream" aria-hidden="true"><div class="sv-scan" id="sv-scan"></div></div>\n<div class="sv-bins">\n<div class="sv-bin buy" id="sv-buy"><p class="t">Buys from another source</p><span class="v" id="sv-buy-n">0</span>\n<p class="c"><span id="sv-buy-p">0</span> products, no source approval of their own. Likely buyers of technical.</p><div class="bar"><i id="sv-buy-bar"></i></div>\n<p class="go"><a href="#t-reg">See them in the registrant table</a></p></div>\n<div class="sv-bin own" id="sv-own"><p class="t">Holds its own approval</p><span class="v" id="sv-own-n">0</span>\n<p class="c"><span id="sv-own-p">0</span> products under an approval they hold.</p><div class="bar"><i id="sv-own-bar"></i></div></div>\n</div></div></div>'; whos0.before(box.firstChild);
+  var box = document.createElement('div');
+  box.innerHTML = '<div class="sv" id="sv" aria-label="' + MV("Sieving this active's registered products by whether the registrant holds its own source approval", '按登记商是否自己持有原药批准，筛这个原药的在册产品') + '">' +
+    '<div class="sv-head"><p class="sv-state" id="sv-state" aria-live="polite"></p><button class="sv-replay" type="button" id="sv-replay">' + MV('Replay', '重播') + '</button></div>' +
+    '<div class="sv-body"><div class="sv-stream" id="sv-stream" aria-hidden="true"><div class="sv-scan" id="sv-scan"></div></div><div class="sv-bins">' +
+    '<div class="sv-bin buy" id="sv-buy"><p class="t">' + MV('Buys from another source', '向别人买原药') + '</p><span class="v" id="sv-buy-n">0</span>' +
+    '<p class="c"><span id="sv-buy-p">0</span> ' + MV('products, no source approval of their own. Likely buyers of technical.', '个产品，自己没有原药批准，可能是原药买家。') + '</p><div class="bar"><i id="sv-buy-bar"></i></div>' +
+    '<p class="go"><a href="#t-reg">' + MV('See them in the registrant table', '在登记商表里查看') + '</a></p></div>' +
+    '<div class="sv-bin own" id="sv-own"><p class="t">' + MV('Holds its own approval', '自己持有批准') + '</p><span class="v" id="sv-own-n">0</span>' +
+    '<p class="c"><span id="sv-own-p">0</span> ' + MV('products under an approval they hold.', '个产品，用的是自己的批准。') + '</p><div class="bar"><i id="sv-own-bar"></i></div></div>' +
+    '</div></div></div>';
+  whos0.before(box.firstChild);
   var $ = function (s) { return document.querySelector(s); };
   var reg = {}, regs = [];
   // 同一份事实：注册商是否持有来源批准，读 #t-reg；产品读 #t-prod
   Array.prototype.forEach.call($('#t-reg').tBodies[0].rows, function (r) {
     var a = r.cells[0].querySelector('a'), name = (a || r.cells[0]).textContent.trim();
-    reg[name] = r.cells[2].textContent.trim() === 'Yes'; regs.push(name);
+    reg[name] = r.cells[2].textContent.trim() === MV('Yes', '是'); regs.push(name);
   });
   // 按产品号去重：产品表里同一个产品可能出现两行（67081 就是），页面首句的 148 是去重后的数
   var seenNo = {};
@@ -108,9 +119,9 @@
   var buyP = prods.filter(function (p) { return !p.own; }).length, ownP = N - buyP;
   var h3 = document.querySelector('.who.buy data'), h3b = document.querySelector('.who.both data');
   if ((h3 && +h3.value !== buyRegs) || (h3b && +h3b.value !== ownRegs)) console.warn('sieve: counts differ from the Who to talk to headings', buyRegs, ownRegs);
-  $('#sv-total').textContent = N;
 
   var stream = $('#sv-stream'), scan = $('#sv-scan'), sv = $('#sv'), state = $('#sv-state'), replay = $('#sv-replay');
+  $('#sv-state').innerHTML = MV('Sieving <b id="sv-seen">0</b>&nbsp;of&nbsp;<b>' + N + '</b> registered products', '正在筛 <b id="sv-seen">0</b>&nbsp;/&nbsp;<b>' + N + '</b> 个在册产品');
   var ROW = 52, TICK = 140, SAMPLE = 12;   // Kevin 10-31：「不要太久 快速完成 不然看晕了」→ 整段约 2 秒（原来约 7 秒）
   var H, VIS, SCAN;
   function geom() { H = stream.clientHeight; VIS = Math.floor(H / ROW); SCAN = 4 + ROW * Math.round((H / 2 - 26) / ROW); scan.style.top = (SCAN - 4) + 'px'; }
@@ -136,7 +147,7 @@
     el.querySelector('.pn').textContent = p.pn; el.querySelector('.rg').textContent = p.rg;
     stream.appendChild(el); return el;
   }
-  function mark(el, p) { el.classList.add(p.own ? 'own' : 'hit'); el.querySelector('.tg').textContent = p.own ? 'Own approval' : 'Buys source'; }
+  function mark(el, p) { el.classList.add(p.own ? 'own' : 'hit'); el.querySelector('.tg').textContent = p.own ? MV('Own approval', '自有批准') : MV('Buys source', '买原药'); }
   function short(n) { return n.replace(/\s*\(.*?\)\s*/g, ' ').replace(/\b(Pty\.?|Ltd\.?|Limited|Australia|Aust)\b/gi, '').replace(/\s+/g, ' ').trim(); }
   function fly(el, p) {
     var to = $(p.own ? '#sv-own-n' : '#sv-buy-n').getBoundingClientRect(), from = el.getBoundingClientRect();
@@ -153,7 +164,8 @@
   function bump(own) { var b = $(own ? '#sv-own' : '#sv-buy'); b.classList.add('bump'); setTimeout(function () { b.classList.remove('bump'); }, 300); }
   function done() {
     sv.classList.add('done'); replay.disabled = false;
-    state.innerHTML = '<span><b>' + buyRegs + '</b> of ' + regs.length + ' registrants sell it without their own source approval</span>';
+    state.innerHTML = MV('<span><b>' + buyRegs + '</b> of ' + regs.length + ' registrants sell it without their own source approval</span>',
+                         '<span>' + regs.length + ' 家登记商里 <b>' + buyRegs + '</b> 家自己没有原药批准</span>');
   }
   function settle() {
     geom(); stream.querySelectorAll('.sv-row').forEach(function (r) { r.remove(); });
@@ -164,7 +176,7 @@
   var timer = null, running = false;
   function run() {
     geom(); running = true; sv.classList.remove('done'); replay.disabled = true;
-    state.innerHTML = 'Sieving <b id="sv-seen">0</b>&nbsp;of&nbsp;<b>' + N + '</b> registered products';
+    state.innerHTML = MV('Sieving <b id="sv-seen">0</b>&nbsp;of&nbsp;<b>' + N + '</b> registered products', '正在筛 <b id="sv-seen">0</b>&nbsp;/&nbsp;<b>' + N + '</b> 个在册产品');
     stream.querySelectorAll('.sv-row').forEach(function (r) { r.remove(); });
     paint({ b: 0, o: 0, bp: 0, op: 0 }, 0);
     var live = [], i = 0;
@@ -221,7 +233,7 @@
   var PLUS = '<svg class="off" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 3v10M3 8h10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>' +
              '<svg class="on" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>';
   var hint = document.createElement('p'); hint.className = 'lift-hint';
-  hint.textContent = 'Press and hold a company, then drop it into your shortlist at the bottom.';
+  hint.textContent = MV('Press and hold a company, then drop it into your shortlist at the bottom.', '按住一家公司，拖进底部的待联系清单。');
   var whos = sec.querySelector('.whos'); if (!whos) return; whos.before(hint);
 
   var rows = Array.prototype.slice.call(sec.querySelectorAll('.who li'));
@@ -233,13 +245,13 @@
     a.classList.add('nm'); a.draggable = false;
     var b = document.createElement('button');
     b.type = 'button'; b.className = 'add'; b.innerHTML = PLUS;
-    b.setAttribute('aria-label', 'Add ' + a.textContent + ' to shortlist');
+    b.setAttribute('aria-label', MV('Add ' + a.textContent + ' to shortlist', '把 ' + a.textContent + ' 加入清单'));
     li.appendChild(b);
     b.addEventListener('click', function (e) { e.stopPropagation(); toggle(li); });
     li.addEventListener('keydown', function (e) { if (e.key === 'Enter' && e.target === li) { e.preventDefault(); toggle(li); } });
   });
   function paintRows() {
-    rows.forEach(function (li) { var b = li.querySelector('.add'); if (b) { var on = has(li.dataset.k); b.setAttribute('aria-pressed', String(on)); b.setAttribute('aria-label', (on ? 'Remove ' : 'Add ') + li.dataset.n + (on ? ' from shortlist' : ' to shortlist')); } });
+    rows.forEach(function (li) { var b = li.querySelector('.add'); if (b) { var on = has(li.dataset.k); b.setAttribute('aria-pressed', String(on)); b.setAttribute('aria-label', MV_ZH ? (on ? '从清单移除 ' : '加入清单 ') + li.dataset.n : (on ? 'Remove ' : 'Add ') + li.dataset.n + (on ? ' from shortlist' : ' to shortlist')); } });
   }
   function toggle(li) { if (has(li.dataset.k)) remove(li.dataset.k); else add(li.dataset.k, li.dataset.n); paint(true); }
 
@@ -247,14 +259,14 @@
   var dock = document.createElement('aside');
   dock.className = 'dock h-glass'; dock.setAttribute('aria-live', 'polite');
   dock.innerHTML = '<span class="ico"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 4.5h12M4 10h12M4 15.5h7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>' +
-    '<div class="txt"><div class="ttl">Shortlist · <data value="0">0</data> <span class="unit">companies</span></div><div class="names"></div><div class="hint">Drop here to add</div></div>' +
-    '<a class="open" href="' + ((document.querySelector('a.brand') || {}).getAttribute ? document.querySelector('a.brand').getAttribute('href').replace(/index\.html$/, '') : '/') + '#watching">Open list</a>';
+    '<div class="txt"><div class="ttl">' + MV('Shortlist', '待联系清单') + ' · <data value="0">0</data> <span class="unit">' + MV('companies', '家公司') + '</span></div><div class="names"></div><div class="hint">' + MV('Drop here to add', '放到这里加入') + '</div></div>' +
+    '<a class="open" href="' + ((document.querySelector('a.brand') || {}).getAttribute ? document.querySelector('a.brand').getAttribute('href').replace(/index\.html$/, '') : '/') + '#watching">' + MV('Open list', '打开清单') + '</a>';
   document.body.appendChild(dock);
   var num = dock.querySelector('data'), names = dock.querySelector('.names'), unit = dock.querySelector('.unit');
   function paint(bump) {
     var c = companies();
-    num.value = c.length; num.textContent = c.length; unit.textContent = c.length === 1 ? 'company' : 'companies';
-    names.textContent = c.length ? c.slice(0, 3).map(function (x) { return x.n; }).join(', ') + (c.length > 3 ? ' and ' + (c.length - 3) + ' more' : '') : 'Nothing yet';
+    num.value = c.length; num.textContent = c.length; unit.textContent = MV_ZH ? '家公司' : c.length === 1 ? 'company' : 'companies';
+    names.textContent = c.length ? c.slice(0, 3).map(function (x) { return x.n; }).join(MV(', ', '、')) + (c.length > 3 ? MV(' and ' + (c.length - 3) + ' more', ' 等 ' + c.length + ' 家') : '') : MV('Nothing yet', '还没有');
     dock.classList.toggle('show', c.length > 0 || !!held);
     if (bump && !reduce) { num.classList.remove('bump'); void num.offsetWidth; num.classList.add('bump'); }
     paintRows();

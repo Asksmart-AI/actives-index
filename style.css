@@ -662,10 +662,18 @@ body.lifting .dock .hint{display:block}body.lifting .dock .names{display:none}
 /* 10-31 capture：侧栏目录项之间只隔 2px，悬停底色和当前项挨在一起；中文页标题不用负字距 */
 .toc{gap:6px}
 :lang(zh) h1,:lang(zh) h2,:lang(zh) h3,:lang(zh) .brand{letter-spacing:0}
-/* 语言切换：右上角（Kevin 10-31）。英文页在搜索框右边，中文页顶到最右 */
-.lang{flex:none;display:inline-flex;align-items:center;min-height:36px;padding:0 var(--s3);margin-left:var(--s2);font:600 13.5px var(--sans);color:var(--p-ink);
-  background:var(--p-soft);border:1px solid var(--p-line);border-radius:var(--r-ctl);text-decoration:none;white-space:nowrap}
-.lang:hover{text-decoration:none}
-@media (hover:hover) and (pointer:fine){.lang:hover{background:color-mix(in oklab,var(--p) 17%,#fff)}}
-.lang:active{transform:scale(.97)}
-.nav + .lang{margin-left:auto}
+/* 语言切换：右上角下拉，只显示当前语言（Kevin 10-31：「右上角写英文，是个下拉列表可以切成中文」） */
+.langsel{position:relative;flex:none;margin-left:var(--s2)}
+.langsel summary{list-style:none;display:inline-flex;align-items:center;gap:6px;min-height:40px;padding:0 var(--s3);font:600 13.5px var(--sans);color:var(--ink-2);
+  background:var(--card);border:1px solid var(--line-2);border-radius:var(--r-ctl);cursor:pointer;user-select:none}
+.langsel summary::-webkit-details-marker{display:none}
+.langsel summary::marker{content:""}
+.langsel summary::after{content:none}
+.langsel summary svg:last-child{transition:transform var(--t-fast) var(--ease-out)}
+.langsel[open] summary svg:last-child{transform:rotate(180deg)}
+@media (hover:hover) and (pointer:fine){.langsel summary:hover{border-color:var(--accent)}}
+.langmenu{position:absolute;right:0;top:calc(100% + 6px);z-index:30;display:grid;gap:2px;min-width:148px;padding:6px;border-radius:var(--r-md)}
+.langmenu a{display:block;padding:var(--s2) var(--s3);border-radius:var(--r-sm);color:var(--ink);font-size:14px;text-decoration:none}
+@media (hover:hover) and (pointer:fine){.langmenu a:hover{background:var(--accent-soft);text-decoration:none}}
+.langmenu a[aria-current]{color:var(--p-ink);font-weight:650;background:var(--p-soft)}
+@media (max-width:720px){.langsel summary{padding:0 var(--s2);gap:4px}}

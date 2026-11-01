@@ -33,5 +33,6 @@ URL pattern: https://activesindex.com/active/<common-name>, for example https://
 
 ## Data
 - [All actives as CSV](https://activesindex.com/data/actives-australia.csv): name, chemical group, approved sources, products, registrants, data protection end
-- [中文版 / Chinese](https://activesindex.com/zh/): 原药中文通用名、批准来源、持有澳洲原药批准的中国企业清单 (https://activesindex.com/zh/china)
+- [中文版 / Chinese](https://activesindex.com/zh/): every page above in Simplified Chinese, same data (https://activesindex.com/zh/active/<common-name>)
+- [Chinese companies holding approvals](https://activesindex.com/china)
 - [Method and definitions](https://activesindex.com/about)

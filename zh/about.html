@@ -1,0 +1,37 @@
+<!doctype html><html lang="zh-Hans"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>方法与注意事项 · Actives Index 澳洲原药索引</title><meta name="description" content="Actives Index 怎样从 APVMA PubCRIS 数据整理出来，以及它看不出什么。"><link rel="canonical" href="https://activesindex.com/zh/about"><link rel="alternate" hreflang="en" href="https://activesindex.com/about"><link rel="alternate" hreflang="zh-Hans" href="https://activesindex.com/zh/about"><link rel="alternate" hreflang="x-default" href="https://activesindex.com/about">
+<meta property="og:title" content="方法与注意事项 · Actives Index 澳洲原药索引"><meta property="og:description" content="Actives Index 怎样从 APVMA PubCRIS 数据整理出来，以及它看不出什么。"><meta property="og:type" content="website"><meta property="og:url" content="https://activesindex.com/zh/about">
+<meta property="og:site_name" content="Actives Index 澳洲原药索引"><meta property="og:image" content="https://activesindex.com/og.png"><meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml"><meta name="theme-color" content="#f1f5f9">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../house.css"><link rel="stylesheet" href="../style.css"></head><body data-base="" data-data="2026-10-31">
+<header class="top"><div class="top-in"><a class="brand" href="./"><svg class="logo" width="26" height="26" viewBox="8 8 48 48" aria-hidden="true"><rect x="8" y="34" width="44" height="18" rx="5" fill="var(--accent)" opacity=".35"/><rect x="10" y="24" width="44" height="18" rx="5" fill="var(--accent)" opacity=".6"/><rect x="12" y="12" width="44" height="22" rx="5" fill="var(--accent)"/><polygon points="24.00,16.50 29.63,19.75 29.63,26.25 24.00,29.50 18.37,26.25 18.37,19.75" fill="var(--signal)"/><rect x="34" y="19" width="16" height="3.5" rx="1.75" fill="var(--on-accent)" opacity=".8"/><rect x="34" y="25" width="10" height="3.5" rx="1.75" fill="var(--on-accent)" opacity=".5"/></svg><span>Actives Index</span><em>澳洲原药索引</em></a>
+<nav class="nav"><a href="./#explore">原药</a><a href="uses">作物<span class="long">与防治对象</span></a><a href="protection">数据保护</a><a href="changes">近期变化</a><a href="about" aria-current="page">方法</a></nav>
+<button class="find" type="button" data-palette><svg class="i" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5" stroke="currentColor" stroke-width="2" fill="none"/><path d="M16 16l4.5 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>搜索原药、公司、作物</span><kbd>/</kbd></button><details class="langsel"><summary aria-label="语言: 中文"><svg class="i" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="1.8" fill="none"/><path d="M3.5 12h17M12 3.5c2.5 2.6 3.6 5.4 3.6 8.5s-1.1 5.9-3.6 8.5c-2.5-2.6-3.6-5.4-3.6-8.5s1.1-5.9 3.6-8.5z" stroke="currentColor" stroke-width="1.8" fill="none"/></svg><span>中文</span><svg class="i" width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></summary><div class="langmenu h-glass"><a href="../about" hreflang="en" lang="en">English</a><a href="about" hreflang="zh-Hans" lang="zh-Hans" aria-current="true">中文</a></div></details></div></header>
+<div class="palette" hidden role="dialog" aria-label="搜索"><div class="palette-box"><label class="palette-in"><svg class="i" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5" stroke="currentColor" stroke-width="2" fill="none"/><path d="M16 16l4.5 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><input type="search" placeholder="原药、公司、作物、病虫草或化学类别" autocomplete="off" aria-label="搜索"></label><ol class="palette-list" role="listbox"></ol><p class="palette-foot"><kbd>↑</kbd><kbd>↓</kbd> 选择 <kbd>Enter</kbd> 打开 <kbd>Esc</kbd> 关闭</p></div></div>
+<main><header class="ahead"><h1>方法与注意事项</h1></header><div class="sheet solo prose">
+<h2>数据来源</h2><p>APVMA PubCRIS 公开导出（<a href="https://permits.apvma.gov.au/pubcris.zip">pubcris.zip</a>，在 <a href="https://data.gov.au/data/dataset/0de37904-43e0-4814-b21b-5b64fafefe6f">data.gov.au</a> 以 CC BY 3.0 AU 许可发布），数据集标注更新于 2026-10-29，2026-10-31 下载。各表按产品号关联。在审的新用途来自 APVMA 贸易咨询通知（CC BY 4.0）。</p>
+<p>结构式按通用名在 <a href="https://pubchem.ncbi.nlm.nih.gov/">PubChem</a>（NCBI）查找，用 RDKit 绘制。只有 PubChem 记录的 InChIKey 与 <a href="https://www.bcpcpesticidecompendium.org/">BCPC 农药通用名纲要</a>里该通用名的一致（至少原子和键一致）时才显示。盐和酯形式显示母体。每张图都链接到 PubChem 记录。</p>
+<p>原药中文通用名、作物和病虫草中文名、「是否中国企业」都由模型（Claude）按英文名判断，可能有误，以英文原名为准。原药中文名与 Wikidata 对照，一致率见项目记录。</p>
+<h2>定义</h2><ul>
+<li><b>批准来源</b>：含该原药的有效原药批准（active constituent approval，类别 TG）。</li>
+<li><b>首次登记</b>：各州首次登记日期里最早的一个（登记库自己的产品日期是最近一次续期）。</li>
+<li><b>在册产品</b>：有效登记的农用产品（类别 A*），该原药是有效成分。不含兽药。</li>
+<li><b>每个来源对应产品</b>：在册产品数除以批准来源数。粗略反映每个来源支撑多少产品，不是市场份额。</li>
+<li><b>近期变化</b>：导出里最近半年内批准的来源、首次登记的产品。已取消的记录不在导出里，所以看不到撤销。换了产品号的产品算新产品。</li>
+<li><b>盐和酯形式</b>：批准常登记在母体名下，这类页面会链接到母体。</li>
+<li><b>状态标签</b>：只数这个名称下的批准来源：单一（1）、少（2–3）、若干（4–9）、多（10 个以上）。描述的是登记情况，不是需求或价格。</li>
+<li><b>谁在登记</b>：按含该原药的在册产品数给登记商排序；实心段表示这家公司同时持有该原药的批准。</li>
+<li><b>作物与防治对象</b>：每个在册产品标签上的用途（作物或场所 × 病虫草害），照 APVMA 的记录。至少 20 个在册产品覆盖的作物或防治对象才单独成页。拼写变体照原样保留。</li>
+<li><b>该找谁</b>：用这个原药登记产品、自己却不持有批准的登记商，用的是别家批准的来源。具体是哪家不公开。</li>
+<li><b>关注</b>：你关注的原药和公司只存在你自己的浏览器里，不会发送到任何地方。</li>
+<li><b>数据保护</b>：含该原药的任一产品所提交的受保护数据里，最晚的未来到期日。保护的是具体数据，不是原药本身。</li></ul>
+<h2>这里看不出的</h2><ul>
+<li>批准背后是哪家生产商：PubCRIS 只公布持有人，不公布生产厂址。</li>
+<li>某个产品实际用的是哪个来源。</li>
+<li>销量、价格或专利。</li>
+<li>任何产品怎么用。请以标签为准。</li></ul></div></main><footer><div class="foot-in"><p>独立整理，数据来自澳大利亚农药兽药管理局（APVMA）PubCRIS 公开导出（data.gov.au，2026-10-31 下载，CC BY 3.0 AU 许可）。与 APVMA 无关联，也未获其认可。使用前请在 <a href="https://portal.apvma.gov.au/pubcris">PubCRIS</a> 核对每条记录。</p>
+<nav class="foot-lists" aria-label="清单"><a href="lists/few-sources">只有 1–3 个来源的原药</a><a href="lists/single-source">单一来源原药</a><a href="lists/many-products-few-sources">产品多、来源少</a><a href="lists/no-current-source">有产品但无有效来源</a><a href="protection">数据保护到期日历</a><a href="china">持有批准的中国企业</a><a href="../data/actives-australia.csv">下载全部原药（CSV，英文）</a></nav>
+<p>原药批准持有人不一定是生产商：PubCRIS 不公布生产厂址。中文通用名、作物和病虫草中文名由模型翻译，可能有误，以英文原名为准。 <a href="about">方法与注意事项</a></p></div></footer>
+<script src="../app.js" defer></script><script src="../moves.js" defer></script></body></html>
