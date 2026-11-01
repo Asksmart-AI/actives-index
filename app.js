@@ -310,3 +310,30 @@
     });
   }
 })();
+
+// ---------- 简化版（20261101）：原药页标签页跟着网址 #，登记商按「有没有自有批准」筛 ----------
+(function () {
+  var bar = document.querySelector('.tabs[data-switch-group]'); if (!bar) return;
+  function open(id) {
+    var b = bar.querySelector('[data-switch="' + id + '"]'); if (b) { b.click(); return true; }
+    return false;
+  }
+  bar.addEventListener('click', function (e) {
+    var b = e.target.closest('[data-switch]'); if (!b) return;
+    history.replaceState(null, '', '#' + b.getAttribute('data-switch'));
+  });
+  bar.addEventListener('keydown', function (e) {
+    if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return;
+    var bs = Array.prototype.slice.call(bar.querySelectorAll('[data-switch]')), i = bs.indexOf(document.activeElement);
+    if (i < 0) return; var j = (i + (e.key === 'ArrowRight' ? 1 : bs.length - 1)) % bs.length; bs[j].focus(); bs[j].click();
+  });
+  var h = location.hash.slice(1); if (h) open(h);
+  window.addEventListener('hashchange', function () { open(location.hash.slice(1)); });
+  var f = document.querySelector('[data-ownfilter]'), t = document.getElementById('t-reg');
+  if (f && t) f.addEventListener('click', function (e) {
+    var b = e.target.closest('button'); if (!b) return;
+    f.querySelectorAll('button').forEach(function (x) { x.setAttribute('aria-pressed', String(x === b)); });
+    var v = b.getAttribute('data-f');
+    Array.prototype.forEach.call(t.tBodies[0].rows, function (r) { r.hidden = v !== 'all' && r.getAttribute('data-own') !== v; });
+  });
+})();

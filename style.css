@@ -677,3 +677,42 @@ body.lifting .dock .hint{display:block}body.lifting .dock .names{display:none}
 @media (hover:hover) and (pointer:fine){.langmenu a:hover{background:var(--accent-soft);text-decoration:none}}
 .langmenu a[aria-current]{color:var(--p-ink);font-weight:650;background:var(--p-soft)}
 @media (max-width:720px){.langsel summary{padding:0 var(--s2);gap:4px}}
+
+/* ---------- 简化版（20261101）：标签页原药页 ---------- */
+.acts{display:flex;flex-wrap:wrap;gap:var(--s2);margin:0 0 var(--s5)}
+.tanline{margin:calc(-1 * var(--s3)) 0 var(--s4);font-size:14px;color:var(--ink-2)}
+.tanline small{color:var(--mute)}
+.sheet.tabbed{padding:0;overflow:hidden}
+.tabs{display:flex;gap:var(--s1);padding:var(--s2) var(--s3) 0;border-bottom:1px solid var(--line);overflow-x:auto;background:var(--card-2)}
+.tabs button{display:inline-flex;align-items:center;gap:var(--s2);height:46px;padding:0 var(--s4);font:600 14px var(--sans);color:var(--mute);background:transparent;border:0;
+  border-bottom:2px solid transparent;margin-bottom:-1px;cursor:pointer;white-space:nowrap}
+.tabs button data{font:600 12px var(--sans);color:var(--mute);background:var(--card);border:1px solid var(--line);border-radius:999px;padding:1px 8px;font-variant-numeric:tabular-nums}
+.tabs button:hover{color:var(--ink)}
+.tabs button[aria-selected=true]{color:var(--ink);border-bottom-color:var(--accent)}
+.tabs button[aria-selected=true] data{color:var(--accent-2);border-color:color-mix(in srgb,var(--accent) 40%,transparent)}
+.tabs button:focus-visible{outline-offset:-3px}
+.tp{padding:var(--s4) var(--s5) var(--s5)}
+.tp-tools{display:flex;align-items:center;justify-content:space-between;gap:var(--s3);flex-wrap:wrap;margin:0 0 var(--s3)}
+.tp-tools:has(> .csv:only-child){justify-content:flex-end}
+.tp-tools .note{flex-basis:100%;order:3;margin:0;font-size:14px;color:var(--ink-2)}
+.seg button data{margin-left:4px;font-variant-numeric:tabular-nums;color:inherit;opacity:.75}
+.qa-fold{margin:var(--s5) 0 0;padding:var(--s4) var(--s5);background:var(--card);border:1px solid var(--line-2);border-radius:var(--r-sheet)}
+.qa-fold summary{cursor:pointer;font:600 15px var(--sans);color:var(--ink-2)}
+.qa-fold .qa{margin-top:var(--s4)}
+@media (max-width:640px){.tp{padding:var(--s3) var(--s3) var(--s4)}.tabs{padding:var(--s1) var(--s2) 0}.tabs button{padding:0 var(--s3);height:44px}.qa-fold{padding:var(--s3)}}
+
+/* ---------- 简化版（20261101）：首页「从一个问题开始」 ---------- */
+.questions{align-self:center;padding:var(--s4) var(--s5);background:var(--card);border:1px solid var(--line-2);border-radius:var(--r-sheet)}
+.questions h2{margin:0 0 var(--s2);font:600 13px var(--sans);color:var(--mute)}
+.questions ol{list-style:none;margin:0;padding:0}
+.questions li+li{border-top:1px solid var(--line)}
+.questions a{display:flex;align-items:center;justify-content:space-between;gap:var(--s3);padding:var(--s3) 0;color:var(--ink);font-weight:550;font-size:15px}
+.questions a:hover{color:var(--accent-2);text-decoration:none}
+.questions data{font:650 15px var(--sans);color:var(--accent-2);font-variant-numeric:tabular-nums}
+.sheet.solo+.histo,.watching+.sheet.solo{margin-top:var(--s5)}
+@media (max-width:900px){.questions{align-self:stretch}}
+.tp-tools{display:block}
+.tp-tools .tp-l{display:flex;align-items:center;gap:var(--s3);flex-wrap:wrap}
+.tp-tools .own-note{margin:var(--s3) 0 0;font-size:14px;color:var(--ink-2);max-width:72ch}
+.tp-tools>.csv:only-child{float:none;margin-left:auto;display:flex}
+@media (max-width:640px){.ahead-row .mol,.ahead-row figure{max-width:150px}.ahead-row figure figcaption{display:none}}
