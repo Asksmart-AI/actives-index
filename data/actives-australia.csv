@@ -13,7 +13,7 @@ active,chemical_group,approved_sources,registered_products,registrants,data_prot
 1-Naphthylacetic Acid,Plant Growth Regulator,0,1,1,,,https://activesindex.com/active/1-naphthylacetic-acid
 1-Octen-3-Ol,Alcohol,0,2,2,,,https://activesindex.com/active/1-octen-3-ol
 "2,2-Dpa Present As The Sodium Salt",Acid-Alkanoic,0,3,2,,,https://activesindex.com/active/2-2-dpa-present-as-the-sodium-salt
-"2,4-D",Phenoxy Acids,23,4,3,,,https://activesindex.com/active/2-4-d
+"2,4-D",Phenoxy Acids,23,3,3,,,https://activesindex.com/active/2-4-d
 "2,4-D 2-Ethylhexyl Ester",Phenoxy Acids,17,6,5,,,https://activesindex.com/active/2-4-d-2-ethylhexyl-ester
 "2,4-D Acid","Phenoxy Acids-2,4-D",0,4,2,,,https://activesindex.com/active/2-4-d-acid
 "2,4-D As Sodium Salt","Phenoxy Acids-2,4-D",0,1,1,,,https://activesindex.com/active/2-4-d-as-sodium-salt
@@ -24,7 +24,7 @@ active,chemical_group,approved_sources,registered_products,registrants,data_prot
 "2,4-D Isopropylamine Salt","Phenoxy Acids-2,4-D-Amine",0,2,2,,,https://activesindex.com/active/2-4-d-isopropylamine-salt
 "2,4-D P/A The Dimethylamine And Monomethylamine Salts","Phenoxy Acids-2,4D",0,3,1,2030-05-27,,https://activesindex.com/active/2-4-d-p-a-the-dimethylamine-and-monomethylamine-salts
 "2,4-D Present As Isopropylamine And Dimethylamine Salts","Phenoxy Acids-2,4D",0,4,3,2030-06-03,"2,4-D",https://activesindex.com/active/2-4-d-present-as-isopropylamine-and-dimethylamine-salts
-"2,4-D Present As The 2-Ethylhexyl Ester",Phenoxy Acids,3,41,25,2027-03-18,"2,4-D",https://activesindex.com/active/2-4-d-present-as-the-2-ethylhexyl-ester
+"2,4-D Present As The 2-Ethylhexyl Ester",Phenoxy Acids,3,40,25,2027-03-18,"2,4-D",https://activesindex.com/active/2-4-d-present-as-the-2-ethylhexyl-ester
 "2,4-D Present As The Choline Salt",,0,1,1,2029-09-16,"2,4-D",https://activesindex.com/active/2-4-d-present-as-the-choline-salt
 "2,4-D Present As The Diethanolamine Salt","Phenoxy Acids-2,4-D-Amine",0,1,1,,"2,4-D",https://activesindex.com/active/2-4-d-present-as-the-diethanolamine-salt
 "2,4-D Present As The Dimethyl Amine Salt","Phenoxy Acids-2,4-D-Amine",0,10,9,,"2,4-D",https://activesindex.com/active/2-4-d-present-as-the-dimethyl-amine-salt
@@ -84,7 +84,7 @@ Alkylaryl Polyoxyethylene - Glycol Phosphate Ester,Petroleum Derivative-Oil,0,2,
 Alkyldimethybenzylammoniumchloride,,0,1,1,2029-07-30,,https://activesindex.com/active/alkyldimethybenzylammoniumchloride
 Allethrin,Pyrethroid,0,2,2,,,https://activesindex.com/active/allethrin
 Allethrin 20:80,Pyrethroid,0,20,8,,,https://activesindex.com/active/allethrin-20-80
-Alpha Cypermethrin,,0,4,4,,,https://activesindex.com/active/alpha-cypermethrin
+Alpha Cypermethrin,,0,5,5,,,https://activesindex.com/active/alpha-cypermethrin
 Alpha-Cypermethrin,"Pyrethroids, Pyrethrins",20,60,42,2031-09-28,,https://activesindex.com/active/alpha-cypermethrin-2
 Alpha-Pinene,,2,1,1,2027-01-19,,https://activesindex.com/active/alpha-pinene
 Alphachloralose,Carbohydrate,0,4,3,2027-04-08,,https://activesindex.com/active/alphachloralose
@@ -106,7 +106,7 @@ Amitrole,Triazoles,5,26,20,2029-03-13,,https://activesindex.com/active/amitrole
 Ammonium Quaternary Compound,,0,1,1,,,https://activesindex.com/active/ammonium-quaternary-compound
 Ammonium Salts Of Phosphoric Acid,"Phosphonic Acids, Phosphinic Acids",1,0,0,,,https://activesindex.com/active/ammonium-salts-of-phosphoric-acid
 Ammonium Sulfate,Ammonium,0,29,25,2029-03-18,,https://activesindex.com/active/ammonium-sulfate
-Ammonium Sulphate,Ammonium,0,38,25,2029-08-20,,https://activesindex.com/active/ammonium-sulphate
+Ammonium Sulphate,Ammonium,0,39,25,2029-08-20,,https://activesindex.com/active/ammonium-sulphate
 Ammonium Thiocyanate,Cyanide,0,20,17,2029-03-13,,https://activesindex.com/active/ammonium-thiocyanate
 Ammonium Thiosulphate,Ammonium,0,3,3,,,https://activesindex.com/active/ammonium-thiosulphate
 Ammonium Thiosulphate (Technical),Ammonium,0,1,1,,,https://activesindex.com/active/ammonium-thiosulphate-technical
@@ -176,7 +176,7 @@ Bensulfuron-Methyl,Sulfonylureas,4,1,1,,,https://activesindex.com/active/bensulf
 Bensulide,Dithiophosphates,1,1,1,,,https://activesindex.com/active/bensulide
 Bentazone,Acylureas,11,2,2,,,https://activesindex.com/active/bentazone
 Bentazone As The Sodium Salt,Thiazole,0,16,12,,,https://activesindex.com/active/bentazone-as-the-sodium-salt
-Benzalkonium Chloride,Ammonium-Quaternary,0,128,54,2030-10-16,,https://activesindex.com/active/benzalkonium-chloride
+Benzalkonium Chloride,Ammonium-Quaternary,0,127,54,2030-10-16,,https://activesindex.com/active/benzalkonium-chloride
 Benzalkonium Chlorine Present As Alkyl Dimethylbenzlammo,Ammonium-Quaternary,0,2,1,,,https://activesindex.com/active/benzalkonium-chlorine-present-as-alkyl-dimethylbenzlammo
 Benzethonium Chloride,"Ammoniums, Quaternary",1,0,0,,,https://activesindex.com/active/benzethonium-chloride
 Benzocaine,,1,0,0,,,https://activesindex.com/active/benzocaine
@@ -191,13 +191,13 @@ Beta-Cyfluthrin,"Pyrethroids, Pyrethrins",4,16,6,2029-06-13,,https://activesinde
 Beta-Cypermethrin,"Pyrethroids, Pyrethrins",1,2,1,,,https://activesindex.com/active/beta-cypermethrin
 Bicyclopyrone,,2,1,1,2027-05-16,,https://activesindex.com/active/bicyclopyrone
 Bifenazate,Carbamates,6,9,7,2030-10-01,,https://activesindex.com/active/bifenazate
-Bifenthrin,"Pyrethroids, Pyrethrins",29,265,79,2030-11-06,,https://activesindex.com/active/bifenthrin
+Bifenthrin,"Pyrethroids, Pyrethrins",29,265,80,2030-11-06,,https://activesindex.com/active/bifenthrin
 Bioallethrin,"Pyrethroids, Pyrethrins",2,6,6,,,https://activesindex.com/active/bioallethrin
 Bioresmethrin,"Pyrethroids, Pyrethrins",1,4,4,,,https://activesindex.com/active/bioresmethrin
 Bispyribac-Sodium,Benzoic Acid And Derivatives,1,1,1,,,https://activesindex.com/active/bispyribac-sodium
 Bistrifluron,,1,0,0,,,https://activesindex.com/active/bistrifluron
 Bitertanol,Triazoles,2,1,1,,,https://activesindex.com/active/bitertanol
-Bixafen,,12,1,1,2026-11-01,,https://activesindex.com/active/bixafen
+Bixafen,,12,1,1,,,https://activesindex.com/active/bixafen
 Bixlozone,,2,2,1,2030-04-06,,https://activesindex.com/active/bixlozone
 Blad,,0,2,1,2032-01-24,,https://activesindex.com/active/blad
 Blad Manufacturing Concentrate,,1,0,0,,,https://activesindex.com/active/blad-manufacturing-concentrate
@@ -209,7 +209,7 @@ Boron (B) Present As Boric Acid,Mineral-Boron-Acid,0,4,3,,,https://activesindex.
 Boron As Disodium Octoborate Anhydrous,Mineral-Boron,0,2,2,,,https://activesindex.com/active/boron-as-disodium-octoborate-anhydrous
 Boron As Sodium Tetraborate Pentahydrate,Mineral-Boron,0,1,1,,,https://activesindex.com/active/boron-as-sodium-tetraborate-pentahydrate
 Boron Present As Borax Decahydrate,Mineral-Boron,0,3,3,,Boron,https://activesindex.com/active/boron-present-as-borax-decahydrate
-Boron Present As Disodium Octaborate Tetrahydrate,Mineral-Boron,0,19,8,2029-05-03,Boron,https://activesindex.com/active/boron-present-as-disodium-octaborate-tetrahydrate
+Boron Present As Disodium Octaborate Tetrahydrate,Mineral-Boron,0,18,8,2029-05-03,Boron,https://activesindex.com/active/boron-present-as-disodium-octaborate-tetrahydrate
 Boron Present As Sodium Tetraborate Decahydrate,Active,0,1,1,2027-05-04,Boron,https://activesindex.com/active/boron-present-as-sodium-tetraborate-decahydrate
 Boscalid,Anilides,15,27,21,2031-05-13,,https://activesindex.com/active/boscalid
 Bovine Coronavirus (Ca-5),Biological,1,0,0,,,https://activesindex.com/active/bovine-coronavirus-ca-5
@@ -252,7 +252,7 @@ Bromoxynil Present As The Potassium Salt,Nitrile,0,14,4,2030-11-03,Bromoxynil,ht
 Bronopol,Alcohols,1,0,0,,,https://activesindex.com/active/bronopol
 Bupirimate,,2,1,1,,,https://activesindex.com/active/bupirimate
 Bupivacaine Hydrochloride,,4,0,0,,,https://activesindex.com/active/bupivacaine-hydrochloride
-Buprofezin,Diazines,6,6,6,2028-05-29,,https://activesindex.com/active/buprofezin
+Buprofezin,Diazines,6,7,7,2028-05-29,,https://activesindex.com/active/buprofezin
 Butafenacil,Pyrimidine,5,17,7,2030-01-14,,https://activesindex.com/active/butafenacil
 Butralin,Anilide/Aniline-Dinitro,1,0,0,,,https://activesindex.com/active/butralin
 Butroxydim,Cyclohexanedione Oximes,6,18,15,2028-08-28,,https://activesindex.com/active/butroxydim
@@ -278,7 +278,7 @@ Canine Parvovirus Strain 630A,,1,0,0,,,https://activesindex.com/active/canine-pa
 Canola Oil,Oil-Plant Extract,0,12,12,,,https://activesindex.com/active/canola-oil
 Canola Oil Ester,Oil-Plant Extract,0,4,3,,,https://activesindex.com/active/canola-oil-ester
 Capsicum Oleoresin,Extract-Plant,0,1,1,,,https://activesindex.com/active/capsicum-oleoresin
-Captan,Phthalic Acids,15,26,19,,,https://activesindex.com/active/captan
+Captan,Phthalic Acids,15,25,19,,,https://activesindex.com/active/captan
 Carbaryl,Carbamates,6,9,6,,,https://activesindex.com/active/carbaryl
 Carbendazim,"Azoles, Oxazoles, Thiazoles",10,27,21,,,https://activesindex.com/active/carbendazim
 Carbetamide,"Azoles, Oxazoles, Thiazoles",3,1,1,2031-04-17,,https://activesindex.com/active/carbetamide
@@ -347,7 +347,7 @@ Chromium Present As Chromium Trioxide,Mineral-Chromium-Acid,0,3,2,,Chromium,http
 "Ci Acid Blue 9, Disodium Salt (Hidacid Azure Blue 65%)",Dye-Blue,0,2,2,,,https://activesindex.com/active/ci-acid-blue-9-disodium-salt-hidacid-azure-blue-65
 Ciclesonide,,1,0,0,,,https://activesindex.com/active/ciclesonide
 Cinchocaine Hydrochloride,,1,0,0,,,https://activesindex.com/active/cinchocaine-hydrochloride
-Cinmethylin,,2,2,1,2030-11-11,,https://activesindex.com/active/cinmethylin
+Cinmethylin,,2,2,1,2031-10-29,,https://activesindex.com/active/cinmethylin
 Cis-Jasmone,,1,0,0,,,https://activesindex.com/active/cis-jasmone
 Citric Acid,Acid-General,0,3,3,2029-08-20,,https://activesindex.com/active/citric-acid
 Citronella Oil,Oil-Plant Extract,0,41,19,,,https://activesindex.com/active/citronella-oil
@@ -369,8 +369,8 @@ Clopyralid Present As Isopropylamine & Monoethanolamine,Active,0,4,4,,Clopyralid
 Clopyralid Present As The Acid & Triisopropanolamine SA,,0,5,5,,Clopyralid,https://activesindex.com/active/clopyralid-present-as-the-acid-triisopropanolamine-sa
 Clopyralid Present As The Dimethylammonium Salt,Pyridine,0,1,1,,Clopyralid,https://activesindex.com/active/clopyralid-present-as-the-dimethylammonium-salt
 Clopyralid Present As The Olamine Salt,Active,0,5,5,2030-01-28,Clopyralid,https://activesindex.com/active/clopyralid-present-as-the-olamine-salt
-Clopyralid Present As The Potassium Salt,Pyridine,0,51,38,,Clopyralid,https://activesindex.com/active/clopyralid-present-as-the-potassium-salt
-Clopyralid Present As The Triisopropanolamine Salt,Pyridine,0,39,32,,Clopyralid,https://activesindex.com/active/clopyralid-present-as-the-triisopropanolamine-salt
+Clopyralid Present As The Potassium Salt,Pyridine,0,52,39,2031-11-02,Clopyralid,https://activesindex.com/active/clopyralid-present-as-the-potassium-salt
+Clopyralid Present As The Triisopropanolamine Salt,Pyridine,0,40,33,,Clopyralid,https://activesindex.com/active/clopyralid-present-as-the-triisopropanolamine-salt
 Cloquintocet Acid,,3,2,1,2027-04-28,,https://activesindex.com/active/cloquintocet-acid
 Cloquintocet-Mexyl,Phenoxy Acids,17,67,38,2030-08-11,,https://activesindex.com/active/cloquintocet-mexyl
 Closantel Sodium,,6,0,0,,,https://activesindex.com/active/closantel-sodium
@@ -393,7 +393,7 @@ Copper (Cu) Present As Copper Sulfate,Mineral-Copper,0,5,3,,,https://activesinde
 Copper (Cu) Present As Cupric Amine Complex,Mineral,0,1,1,,,https://activesindex.com/active/copper-cu-present-as-cupric-amine-complex
 Copper (Cu) Present As Cupric Hydroxide,Mineral-Copper,0,11,7,2028-06-15,,https://activesindex.com/active/copper-cu-present-as-cupric-hydroxide
 Copper (Cu) Present As Cupric Sulphate Pentahydrate,Mineral-Copper,0,1,1,,,https://activesindex.com/active/copper-cu-present-as-cupric-sulphate-pentahydrate
-Copper (Cu) Present As Tribasic Copper Sulphate,Mineral-Copper,0,11,6,,,https://activesindex.com/active/copper-cu-present-as-tribasic-copper-sulphate
+Copper (Cu) Present As Tribasic Copper Sulphate,Mineral-Copper,0,12,6,2031-11-03,,https://activesindex.com/active/copper-cu-present-as-tribasic-copper-sulphate
 Copper Acetate,Mineral-Copper,0,1,1,,,https://activesindex.com/active/copper-acetate
 Copper Ammonium Carbonate,Mineral-Copper-Salt,0,1,1,,,https://activesindex.com/active/copper-ammonium-carbonate
 Copper As Copper (II) Oxide,Mineral-Copper,0,2,1,,,https://activesindex.com/active/copper-as-copper-ii-oxide
@@ -423,10 +423,10 @@ Copper Present As Copper Oxychloride,Mineral-Copper,0,28,17,2029-04-12,Copper,ht
 Copper Present As Copper Oxychloride & Copper Hydroxide,Mineral-Copper,0,1,1,,Copper,https://activesindex.com/active/copper-present-as-copper-oxychloride-copper-hydroxide
 Copper Present As Copper Sulfate Pentahydrate,Mineral-Copper,0,61,32,2032-03-26,Copper,https://activesindex.com/active/copper-present-as-copper-sulfate-pentahydrate
 Copper Present As Copper Triethanolamine Complex,Mineral-Copper,0,7,4,,Copper,https://activesindex.com/active/copper-present-as-copper-triethanolamine-complex
-Copper Present As Cuprous Oxide,Mineral-Copper,0,96,10,2029-04-04,Copper,https://activesindex.com/active/copper-present-as-cuprous-oxide
-Copper Present As Cuprous Thiocyanate,Cyanide,0,17,3,2028-03-30,Copper,https://activesindex.com/active/copper-present-as-cuprous-thiocyanate
+Copper Present As Cuprous Oxide,Mineral-Copper,0,100,10,2029-04-04,Copper,https://activesindex.com/active/copper-present-as-cuprous-oxide
+Copper Present As Cuprous Thiocyanate,Cyanide,0,21,3,2028-03-30,Copper,https://activesindex.com/active/copper-present-as-cuprous-thiocyanate
 Copper Present As Organo-Copper Complex,Mineral-Copper,0,6,4,,Copper,https://activesindex.com/active/copper-present-as-organo-copper-complex
-Copper Pyrithione,Mineral,2,34,4,2028-09-04,,https://activesindex.com/active/copper-pyrithione
+Copper Pyrithione,Mineral,2,32,4,2028-09-04,,https://activesindex.com/active/copper-pyrithione
 Copper Sulfate,Mineral-Copper,0,2,2,,,https://activesindex.com/active/copper-sulfate
 Copper Sulfate - Pentahydrate,Mineral-Copper,0,2,2,,,https://activesindex.com/active/copper-sulfate-pentahydrate
 Corn Gluten Meal,Food-Plant,0,1,1,,,https://activesindex.com/active/corn-gluten-meal
@@ -438,7 +438,7 @@ Creosote - High Temperature,Coal Tar,0,3,3,,,https://activesindex.com/active/cre
 "Creosote, Coal Tar",Phenol,0,1,1,,,https://activesindex.com/active/creosote-coal-tar
 Cresol,Phenol,0,2,2,,,https://activesindex.com/active/cresol
 Cresylic Acid,Phenol,0,3,3,,,https://activesindex.com/active/cresylic-acid
-Cuprous Oxide,Mineral-Copper,0,26,3,2029-08-21,,https://activesindex.com/active/cuprous-oxide
+Cuprous Oxide,Mineral-Copper,0,27,4,2029-08-21,,https://activesindex.com/active/cuprous-oxide
 Cyanamide,,4,5,4,2027-02-02,,https://activesindex.com/active/cyanamide
 Cyanazine,"Triazines, Tetrazines",5,7,7,,,https://activesindex.com/active/cyanazine
 Cyantraniliprole,Benzamides,10,6,2,2031-10-31,,https://activesindex.com/active/cyantraniliprole
@@ -481,7 +481,7 @@ Diafenthiuron,Urea Derivatives,11,12,8,2030-05-02,,https://activesindex.com/acti
 Diatomaceous Earth,Filler,0,6,4,,,https://activesindex.com/active/diatomaceous-earth
 Diazinon,Thiophosphates,2,3,2,,,https://activesindex.com/active/diazinon
 Dibutyl Phthalate,,1,0,0,,,https://activesindex.com/active/dibutyl-phthalate
-Dicamba,Benzoic Acid And Derivatives,25,11,10,2028-05-17,,https://activesindex.com/active/dicamba
+Dicamba,Benzoic Acid And Derivatives,25,10,10,2028-05-17,,https://activesindex.com/active/dicamba
 Dicamba As The Acid,Benzoic Acid-Arylaliphatic,0,3,3,,,https://activesindex.com/active/dicamba-as-the-acid
 Dicamba As The Dimethylamine And Monomethylamine Salt,Benzoic Acid-Arylaliphatic,0,1,1,,,https://activesindex.com/active/dicamba-as-the-dimethylamine-and-monomethylamine-salt
 Dicamba As The Sodium Salt,Benzoic Acid-Arylaliphatic,0,8,8,,,https://activesindex.com/active/dicamba-as-the-sodium-salt
@@ -490,7 +490,7 @@ Dicamba Dimethylamine Salt,Benzoic Acid-Arylaliphatic,0,5,5,2029-04-15,,https://
 Dicamba Present As The Acid,Benzoic Acid-Arylaliphatic,0,5,4,2027-10-19,Dicamba,https://activesindex.com/active/dicamba-present-as-the-acid
 Dicamba Present As The Diethanolamine Salt,Benzoic Acid-Arylaliphatic,0,2,2,,Dicamba,https://activesindex.com/active/dicamba-present-as-the-diethanolamine-salt
 Dicamba Present As The Diglycolamine Salt,,0,1,1,2027-07-18,Dicamba,https://activesindex.com/active/dicamba-present-as-the-diglycolamine-salt
-Dicamba Present As The Dimethylamine Salt,Benzoic Acid-Arylaliphatic,0,133,47,2029-12-24,Dicamba,https://activesindex.com/active/dicamba-present-as-the-dimethylamine-salt
+Dicamba Present As The Dimethylamine Salt,Benzoic Acid-Arylaliphatic,0,140,47,2029-12-24,Dicamba,https://activesindex.com/active/dicamba-present-as-the-dimethylamine-salt
 Dicamba Present As The Monoethanolamine Salt,,0,2,1,2031-03-27,Dicamba,https://activesindex.com/active/dicamba-present-as-the-monoethanolamine-salt
 "Dichelobacter Nodosus Serotypes A,B,C,D,E,F,G,H,I",Biological,1,0,0,,,https://activesindex.com/active/dichelobacter-nodosus-serotypes-a-b-c-d-e-f-g-h-i
 Dichlobenil,Benzonitriles,4,6,4,,,https://activesindex.com/active/dichlobenil
@@ -530,7 +530,7 @@ Diniconazole,,1,0,0,,,https://activesindex.com/active/diniconazole
 Dinocap,,1,0,0,,,https://activesindex.com/active/dinocap
 Dinoprost,,2,0,0,,,https://activesindex.com/active/dinoprost
 Dinoprost Trometamol,,1,0,0,,,https://activesindex.com/active/dinoprost-trometamol
-Dinotefuran,Guanidines,9,8,3,2031-01-21,,https://activesindex.com/active/dinotefuran
+Dinotefuran,Guanidines,9,7,3,2031-01-21,,https://activesindex.com/active/dinotefuran
 Diphacinone,,1,2,1,2028-09-11,,https://activesindex.com/active/diphacinone
 Diphenhydramine Hydrochloride,,1,0,0,,,https://activesindex.com/active/diphenhydramine-hydrochloride
 Diphenylamine,Anilines,2,3,3,,,https://activesindex.com/active/diphenylamine
@@ -576,7 +576,7 @@ Epsiprantel,,1,0,0,,,https://activesindex.com/active/epsiprantel
 Equine Immunoglobulin Protein,Biological,1,0,0,,,https://activesindex.com/active/equine-immunoglobulin-protein
 Eremophilone Oil,,1,0,0,,,https://activesindex.com/active/eremophilone-oil
 Erythromycin Thiocyanate,,1,0,0,,,https://activesindex.com/active/erythromycin-thiocyanate
-Esbiothrin,"Pyrethroids, Pyrethrins",3,25,3,2029-02-28,,https://activesindex.com/active/esbiothrin
+Esbiothrin,"Pyrethroids, Pyrethrins",3,26,3,2029-02-28,,https://activesindex.com/active/esbiothrin
 Esfenvalerate,"Pyrethroids, Pyrethrins",2,22,4,,,https://activesindex.com/active/esfenvalerate
 Esomeprazole Magnesium,,2,0,0,,,https://activesindex.com/active/esomeprazole-magnesium
 Esomeprazole Magnesium Trihydrate,,1,0,0,,,https://activesindex.com/active/esomeprazole-magnesium-trihydrate
@@ -603,6 +603,7 @@ Ethyl Ester Of C14 & C22 Mixed Fatty Acids,Acid-Fatty,0,1,1,,,https://activesind
 Ethyl Esters Of Canola Oil Fatty Acid,Active,0,2,2,2028-03-30,,https://activesindex.com/active/ethyl-esters-of-canola-oil-fatty-acid
 Ethyl Formate,Solvent,0,4,3,2028-02-23,,https://activesindex.com/active/ethyl-formate
 Ethyl Lactate,,1,0,0,,,https://activesindex.com/active/ethyl-lactate
+Ethylene,,0,1,1,2031-11-02,,https://activesindex.com/active/ethylene
 Ethylene Oxide,Gas,0,4,3,,,https://activesindex.com/active/ethylene-oxide
 Etodolac,,1,0,0,,,https://activesindex.com/active/etodolac
 Etofenprox,"Pyrethroids, Pyrethrins",1,1,1,2030-04-03,,https://activesindex.com/active/etofenprox
@@ -654,7 +655,7 @@ Flumetsulam,Triazoles,11,23,21,2028-03-03,,https://activesindex.com/active/flume
 Flumiclorac-Pentyl,,1,0,0,,,https://activesindex.com/active/flumiclorac-pentyl
 Flumioxazin,Anilides,12,35,19,2031-04-30,,https://activesindex.com/active/flumioxazin
 Fluometuron,Urea Derivatives,12,3,3,,,https://activesindex.com/active/fluometuron
-Fluopicolide,,2,2,1,2026-12-22,,https://activesindex.com/active/fluopicolide
+Fluopicolide,,2,1,1,,,https://activesindex.com/active/fluopicolide
 Fluopyram,Benzamides,20,7,3,2031-03-05,,https://activesindex.com/active/fluopyram
 Fluorine As Sodium Fluoride,Mineral-Fluorine,0,5,2,,,https://activesindex.com/active/fluorine-as-sodium-fluoride
 Fluoxapiprolin,,1,1,1,2032-05-23,,https://activesindex.com/active/fluoxapiprolin
@@ -666,7 +667,7 @@ Flupyradifurone,,2,2,2,2028-08-20,,https://activesindex.com/active/flupyradifuro
 Fluquinconazole,"Azoles, Oxazoles, Thiazoles",4,4,4,,,https://activesindex.com/active/fluquinconazole
 Fluroxypyr,Pyridine-Pyridinoxy,0,4,4,2030-03-20,,https://activesindex.com/active/fluroxypyr
 Fluroxypyr 1-Methyl Heptyl Ester,Pyridine-Pyridinoxy,0,1,1,,,https://activesindex.com/active/fluroxypyr-1-methyl-heptyl-ester
-Fluroxypyr As The Methyl Heptyl Ester,Pyridine-Pyridinoxy,0,77,44,2031-01-16,,https://activesindex.com/active/fluroxypyr-as-the-methyl-heptyl-ester
+Fluroxypyr As The Methyl Heptyl Ester,Pyridine-Pyridinoxy,0,78,45,2031-01-16,,https://activesindex.com/active/fluroxypyr-as-the-methyl-heptyl-ester
 Fluroxypyr-Meptyl,Phenoxy Acids,22,2,1,2030-02-04,,https://activesindex.com/active/fluroxypyr-meptyl
 Flutolanil,,1,2,2,,,https://activesindex.com/active/flutolanil
 Flutriafol,Triazoles,16,60,31,2027-12-22,,https://activesindex.com/active/flutriafol
@@ -712,13 +713,13 @@ Glyphosate Present As Potassium & Monoethanolamine Salts,,0,6,6,2028-03-07,Glyph
 Glyphosate Present As Potassium And Monomethylamine SA,,0,1,1,2030-05-02,Glyphosate,https://activesindex.com/active/glyphosate-present-as-potassium-and-monomethylamine-sa
 Glyphosate Present As The Dimethylammonium Salt,Glycine,0,1,1,,Glyphosate,https://activesindex.com/active/glyphosate-present-as-the-dimethylammonium-salt
 Glyphosate Present As The Isopropylamine And Mono-Ammoni,Glycine,0,3,3,,Glyphosate,https://activesindex.com/active/glyphosate-present-as-the-isopropylamine-and-mono-ammoni
-Glyphosate Present As The Isopropylamine Salt,Glycine,0,255,94,2028-01-10,Glyphosate,https://activesindex.com/active/glyphosate-present-as-the-isopropylamine-salt
+Glyphosate Present As The Isopropylamine Salt,Glycine,0,251,94,,Glyphosate,https://activesindex.com/active/glyphosate-present-as-the-isopropylamine-salt
 Glyphosate Present As The K And Monoethanolamine Salts,,0,1,1,2027-05-27,Glyphosate,https://activesindex.com/active/glyphosate-present-as-the-k-and-monoethanolamine-salts
 Glyphosate Present As The Mono-Ammonium Salt,Glycine,0,43,36,2031-08-06,Glyphosate,https://activesindex.com/active/glyphosate-present-as-the-mono-ammonium-salt
 Glyphosate Present As The Mono-Ammonium Salt And Glyphos,Glycine,0,1,1,,Glyphosate,https://activesindex.com/active/glyphosate-present-as-the-mono-ammonium-salt-and-glyphos
 Glyphosate Present As The Monoethanolamine Salt,Glycine,0,9,7,2029-06-24,Glyphosate,https://activesindex.com/active/glyphosate-present-as-the-monoethanolamine-salt
 Glyphosate Present As The Potassium & Mono-Ammonium Salt,Glycine,0,1,1,2030-12-22,Glyphosate,https://activesindex.com/active/glyphosate-present-as-the-potassium-mono-ammonium-salt
-Glyphosate Present As The Potassium Salt,Glycine,0,98,54,2035-04-17,Glyphosate,https://activesindex.com/active/glyphosate-present-as-the-potassium-salt
+Glyphosate Present As The Potassium Salt,Glycine,0,97,54,2035-04-17,Glyphosate,https://activesindex.com/active/glyphosate-present-as-the-potassium-salt
 Glyphosate-Isopropylammonium,"Phosphonic Acids, Phosphinic Acids",4,0,0,,,https://activesindex.com/active/glyphosate-isopropylammonium
 Glyphosate-Trimesium,"Phosphonic Acids, Phosphinic Acids",2,0,0,,,https://activesindex.com/active/glyphosate-trimesium
 Gonadorelin Diacetate Tetrahydrate,,1,0,0,,,https://activesindex.com/active/gonadorelin-diacetate-tetrahydrate
@@ -746,7 +747,7 @@ Hexythiazox,,4,7,6,2029-08-23,,https://activesindex.com/active/hexythiazox
 Histamine Phosphate,,1,0,0,,,https://activesindex.com/active/histamine-phosphate
 Histidine-L Hydrochloride Monohydrate,,1,0,0,,,https://activesindex.com/active/histidine-l-hydrochloride-monohydrate
 Homobrassinolide,,1,0,0,,,https://activesindex.com/active/homobrassinolide
-Hydramethylnon,Guanidines,5,9,6,2031-03-13,,https://activesindex.com/active/hydramethylnon
+Hydramethylnon,Guanidines,5,10,7,2031-03-13,,https://activesindex.com/active/hydramethylnon
 Hydrocarbon Propellant,Solvent,0,1,1,,,https://activesindex.com/active/hydrocarbon-propellant
 Hydrogen Cyanide,,1,2,1,2033-03-15,,https://activesindex.com/active/hydrogen-cyanide
 Hydrogen Peroxide,,0,26,15,2027-03-14,,https://activesindex.com/active/hydrogen-peroxide
@@ -762,19 +763,19 @@ Imazalil Present As Imazalil Sulphate,Imidazole,0,2,2,2027-04-01,Imazalil,https:
 Imazalil Present As The Sulfate,Imidazole,0,6,5,,Imazalil,https://activesindex.com/active/imazalil-present-as-the-sulfate
 Imazalil Sulfate,Imidazolinones,4,0,0,,,https://activesindex.com/active/imazalil-sulfate
 Imazamox,Imidazolinones,13,20,14,2027-04-21,,https://activesindex.com/active/imazamox
-Imazamox As The Ammonium Salt,Imidazolinone,0,21,13,2029-08-08,,https://activesindex.com/active/imazamox-as-the-ammonium-salt
+Imazamox As The Ammonium Salt,Imidazolinone,0,21,14,2029-08-08,,https://activesindex.com/active/imazamox-as-the-ammonium-salt
 Imazapic,Imidazolinones,12,12,9,2028-01-20,,https://activesindex.com/active/imazapic
 Imazapic As The Ammonium Salt,Imidazolinone,0,23,20,,,https://activesindex.com/active/imazapic-as-the-ammonium-salt
 Imazapyr,Imidazolinones,10,22,14,2029-05-06,,https://activesindex.com/active/imazapyr
 Imazapyr Isopropylamine Salt,Imidazolinone,0,1,1,,,https://activesindex.com/active/imazapyr-isopropylamine-salt
 Imazapyr Present As Isopropylamine Salt,Imidazolinone,0,10,9,,Imazapyr,https://activesindex.com/active/imazapyr-present-as-isopropylamine-salt
-Imazapyr Present As The Ammonium Salt,Imidazolinone,0,18,13,2029-08-08,Imazapyr,https://activesindex.com/active/imazapyr-present-as-the-ammonium-salt
+Imazapyr Present As The Ammonium Salt,Imidazolinone,0,18,14,2029-08-08,Imazapyr,https://activesindex.com/active/imazapyr-present-as-the-ammonium-salt
 Imazapyr Present As The Potassium Salt,Imidazolinone,0,1,1,,Imazapyr,https://activesindex.com/active/imazapyr-present-as-the-potassium-salt
 Imazethapyr,Imidazolinones,14,23,20,,,https://activesindex.com/active/imazethapyr
 Imazethapyr As The Ammonium Salt,Imidazolinone,0,1,1,,,https://activesindex.com/active/imazethapyr-as-the-ammonium-salt
 Imidacloprid,Guanidines,43,173,72,2033-06-23,,https://activesindex.com/active/imidacloprid
 Imidapril Hydrochloride,,1,0,0,,,https://activesindex.com/active/imidapril-hydrochloride
-Imiprothrin,"Pyrethroids, Pyrethrins",2,73,10,2030-08-06,,https://activesindex.com/active/imiprothrin
+Imiprothrin,"Pyrethroids, Pyrethrins",2,75,10,2031-11-04,,https://activesindex.com/active/imiprothrin
 Imiprothrin Manufacturing Concentrate,"Pyrethroids, Pyrethrins",1,2,1,,,https://activesindex.com/active/imiprothrin-manufacturing-concentrate
 Inactivated Avian Influenza Virus H5N9 (Strain A/Ck/Ital,Biological,1,0,0,,,https://activesindex.com/active/inactivated-avian-influenza-virus-h5n9-strain-a-ck-ital
 Inactivated Avian Influenza Virus H7N1 (A/Ck/Italy/1099),Biological,1,0,0,,,https://activesindex.com/active/inactivated-avian-influenza-virus-h7n1-a-ck-italy-1099
@@ -825,7 +826,7 @@ Isomate M,,1,0,0,,,https://activesindex.com/active/isomate-m
 Isopyrazam,,2,1,1,2028-06-22,,https://activesindex.com/active/isopyrazam
 Isotianil,Organochlorine,1,1,1,2032-03-29,,https://activesindex.com/active/isotianil
 Isoxaben,Benzamides,4,2,1,2030-12-22,,https://activesindex.com/active/isoxaben
-Isoxaflutole,"Azoles, Oxazoles, Thiazoles",16,42,35,,,https://activesindex.com/active/isoxaflutole
+Isoxaflutole,"Azoles, Oxazoles, Thiazoles",16,41,35,,,https://activesindex.com/active/isoxaflutole
 Isoxsuprine Hydrochloride,,1,0,0,,,https://activesindex.com/active/isoxsuprine-hydrochloride
 Isoxsuprine Lactate,,1,0,0,,,https://activesindex.com/active/isoxsuprine-lactate
 Itraconazole,,2,0,0,,,https://activesindex.com/active/itraconazole
@@ -863,9 +864,9 @@ MCPA Dimethylamine Salt,Phenoxy Acids-MCPA-Amine,0,6,6,2029-04-15,,https://activ
 MCPA Ethyl Hexyl Ester,Phenoxy Acids-MCPA-Ester,0,2,2,,,https://activesindex.com/active/mcpa-ethyl-hexyl-ester
 MCPA Iso-Octyl Ester,Phenoxy Acids-MCPA-Ester,0,1,1,,,https://activesindex.com/active/mcpa-iso-octyl-ester
 MCPA Potassium Salt,Phenoxy Acids-MCPA,0,1,1,,,https://activesindex.com/active/mcpa-potassium-salt
-MCPA Present As The 2-Ethyl Hexyl Ester,Phenoxy Acids,2,56,39,2030-03-03,MCPA,https://activesindex.com/active/mcpa-present-as-the-2-ethyl-hexyl-ester
+MCPA Present As The 2-Ethyl Hexyl Ester,Phenoxy Acids,2,55,38,2030-03-03,MCPA,https://activesindex.com/active/mcpa-present-as-the-2-ethyl-hexyl-ester
 MCPA Present As The Butoxyethanol Ester,Phenoxy Acids-MCPA,0,1,1,,MCPA,https://activesindex.com/active/mcpa-present-as-the-butoxyethanol-ester
-MCPA Present As The Dimethylamine Salt,Phenoxy Acids-MCPA-Amine,0,152,53,2029-12-24,MCPA,https://activesindex.com/active/mcpa-present-as-the-dimethylamine-salt
+MCPA Present As The Dimethylamine Salt,Phenoxy Acids-MCPA-Amine,0,158,53,2029-12-24,MCPA,https://activesindex.com/active/mcpa-present-as-the-dimethylamine-salt
 MCPA Present As The Ethyl Hexyl Ester,Phenoxy Acids-MCPA-Ester,0,77,37,2030-05-14,MCPA,https://activesindex.com/active/mcpa-present-as-the-ethyl-hexyl-ester
 MCPA Present As The Iso Octyl Ester,Phenoxy Acids-MCPA-Ester,0,7,5,,MCPA,https://activesindex.com/active/mcpa-present-as-the-iso-octyl-ester
 MCPA Present As The Isopropylamine Salt,,0,1,1,2027-01-05,MCPA,https://activesindex.com/active/mcpa-present-as-the-isopropylamine-salt
@@ -899,12 +900,12 @@ Mannheimia Haemolytica,,1,0,0,,,https://activesindex.com/active/mannheimia-haemo
 Maropitant,,4,0,0,,,https://activesindex.com/active/maropitant
 Maropitant Citrate,,7,0,0,,,https://activesindex.com/active/maropitant-citrate
 Meclofenamic Acid,,1,0,0,,,https://activesindex.com/active/meclofenamic-acid
-Mecoprop,Phenoxy Acids,2,2,1,,,https://activesindex.com/active/mecoprop
+Mecoprop,Phenoxy Acids,2,1,1,,,https://activesindex.com/active/mecoprop
 Mecoprop Present As The Dimethylamine Salt,Phenoxy Acids-Propionics,0,7,4,,Mecoprop,https://activesindex.com/active/mecoprop-present-as-the-dimethylamine-salt
 Mecoprop-P,Phenoxy Acids,2,0,0,,,https://activesindex.com/active/mecoprop-p
 Medroxyprogesterone Acetate,,1,0,0,,,https://activesindex.com/active/medroxyprogesterone-acetate
-Mefenpyr-Diethyl,,5,25,13,2031-03-18,,https://activesindex.com/active/mefenpyr-diethyl
-Mefentrifluconazole,,1,5,1,2032-10-02,,https://activesindex.com/active/mefentrifluconazole
+Mefenpyr-Diethyl,,5,24,13,2031-03-18,,https://activesindex.com/active/mefenpyr-diethyl
+Mefentrifluconazole,,1,6,1,2032-10-02,,https://activesindex.com/active/mefentrifluconazole
 Melaleuca Alternifolia Oil,,1,0,0,,,https://activesindex.com/active/melaleuca-alternifolia-oil
 Melaleuca Oil,Oil-Plant Extract,0,7,5,,,https://activesindex.com/active/melaleuca-oil
 Menthol Crystals,,1,0,0,,,https://activesindex.com/active/menthol-crystals
@@ -912,10 +913,10 @@ Mepiquat,Ammonium-Quaternary,0,1,1,,,https://activesindex.com/active/mepiquat
 Mepiquat Chloride,"Ammoniums, Quaternary",9,0,0,,,https://activesindex.com/active/mepiquat-chloride
 Mepiquat Present As The Chloride,Ammonium-Quaternary,0,11,10,2027-11-23,Mepiquat,https://activesindex.com/active/mepiquat-present-as-the-chloride
 Mepiquat Present As The Chloride Salt,Ammonium-Quaternary,0,11,10,2029-04-08,Mepiquat,https://activesindex.com/active/mepiquat-present-as-the-chloride-salt
-Mesosulfuron-Methyl,Sulfonylureas,4,12,10,2028-01-19,,https://activesindex.com/active/mesosulfuron-methyl
+Mesosulfuron-Methyl,Sulfonylureas,4,11,10,2028-01-19,,https://activesindex.com/active/mesosulfuron-methyl
 Mesotrione,Nitrobenzenes,3,1,1,2030-02-14,,https://activesindex.com/active/mesotrione
 Metaflumizone,,1,0,0,,,https://activesindex.com/active/metaflumizone
-Metalaxyl,Anilides,13,29,14,2027-08-09,,https://activesindex.com/active/metalaxyl
+Metalaxyl,Anilides,13,30,15,2031-11-04,,https://activesindex.com/active/metalaxyl
 Metalaxyl M,,1,1,1,2030-05-27,,https://activesindex.com/active/metalaxyl-m
 Metalaxyl-M,Anilides,7,27,12,2030-01-17,,https://activesindex.com/active/metalaxyl-m-2
 Metaldehyde,Aldehydes,9,33,22,2030-06-18,,https://activesindex.com/active/metaldehyde
@@ -938,7 +939,7 @@ Methocarbamol,Carbamates,2,0,0,,,https://activesindex.com/active/methocarbamol
 Methomyl,Oximes-carbamates,11,30,21,2029-08-30,,https://activesindex.com/active/methomyl
 Methoprene,,2,1,1,,,https://activesindex.com/active/methoprene
 Methoxyfenozide,Benzamides,11,10,9,2031-05-25,,https://activesindex.com/active/methoxyfenozide
-Methyl & Ethyl Esters Of Free Fatty Acids From Canola Oi,Acid-Fatty,0,8,8,,,https://activesindex.com/active/methyl-ethyl-esters-of-free-fatty-acids-from-canola-oi
+Methyl & Ethyl Esters Of Free Fatty Acids From Canola Oi,Acid-Fatty,0,9,8,,,https://activesindex.com/active/methyl-ethyl-esters-of-free-fatty-acids-from-canola-oi
 Methyl Bromide,Organohalogens,6,9,5,,,https://activesindex.com/active/methyl-bromide
 Methyl Esters Of Canola Oil Fatty Acids,Ester,0,4,4,,,https://activesindex.com/active/methyl-esters-of-canola-oil-fatty-acids
 Methyl Esters Of Fatty Acids,Ester,0,1,1,,,https://activesindex.com/active/methyl-esters-of-fatty-acids
@@ -1018,7 +1019,7 @@ Non-Ionic Ethoxylate/S,Emulsifiers & Surfactants-Noni,0,4,4,,,https://activesind
 Non-Ionic Fatty Acid Ethoxylates,Emulsifiers & Surfactants,0,2,1,,,https://activesindex.com/active/non-ionic-fatty-acid-ethoxylates
 Non-Ionic Fatty Acid Ethoxylates And Glycerides,Emulsifiers & Surfactants,0,1,1,,,https://activesindex.com/active/non-ionic-fatty-acid-ethoxylates-and-glycerides
 Non-Ionic Surfactant,Emulsifiers & Surfactants-Noni,0,12,11,2030-10-20,,https://activesindex.com/active/non-ionic-surfactant
-Non-Ionic Surfactant Blend,Emulsifiers & Surfactants,0,6,4,2029-08-15,,https://activesindex.com/active/non-ionic-surfactant-blend
+Non-Ionic Surfactant Blend,Emulsifiers & Surfactants,0,7,4,2029-08-15,,https://activesindex.com/active/non-ionic-surfactant-blend
 Non-Ionic Surfactants Mixture,Emulsifiers & Surfactants,0,5,4,,,https://activesindex.com/active/non-ionic-surfactants-mixture
 Nonanoic Acid,Acid,0,64,17,2031-04-14,,https://activesindex.com/active/nonanoic-acid
 Nonionic Alcohol Ethoxylates,Active,0,2,2,,,https://activesindex.com/active/nonionic-alcohol-ethoxylates
@@ -1030,7 +1031,7 @@ Nonyl Phenol Ethoxylate,Emulsifiers & Surfactants-Noni,0,26,21,,,https://actives
 Nonyl Phenol Ethoxylate (9Eo),Emulsifiers & Surfactants,0,1,1,,,https://activesindex.com/active/nonyl-phenol-ethoxylate-9eo
 Nonyl Phenol Ethoxylate - 5 Moles Ethylene Oxide,Emulsifiers & Surfactants,0,2,2,,,https://activesindex.com/active/nonyl-phenol-ethoxylate-5-moles-ethylene-oxide
 Nonyl Phenol Ethoxylate Alcohol Ethoxylate,Emulsifiers & Surfactants,0,2,2,,,https://activesindex.com/active/nonyl-phenol-ethoxylate-alcohol-ethoxylate
-Nonyl Phenol Ethylene Oxide Condensate,Emulsifiers & Surfactants-Noni,0,14,12,,,https://activesindex.com/active/nonyl-phenol-ethylene-oxide-condensate
+Nonyl Phenol Ethylene Oxide Condensate,Emulsifiers & Surfactants-Noni,0,13,12,,,https://activesindex.com/active/nonyl-phenol-ethylene-oxide-condensate
 Nonyl Phenol Ethylene Oxide Condensate Non-Ionic Organic,Emulsifiers & Surfactants,0,2,2,2029-05-31,,https://activesindex.com/active/nonyl-phenol-ethylene-oxide-condensate-non-ionic-organic
 Nonylphenol Ethoxylate / Propoxylate,,0,1,1,,,https://activesindex.com/active/nonylphenol-ethoxylate-propoxylate
 Norflurazon,Pyridazinone,3,2,2,,,https://activesindex.com/active/norflurazon
@@ -1094,12 +1095,12 @@ Pebulate,Thiocarbamates,1,0,0,,,https://activesindex.com/active/pebulate
 Penconazole,Triazoles,5,5,5,,,https://activesindex.com/active/penconazole
 Pencycuron,Urea Derivatives,2,1,1,,,https://activesindex.com/active/pencycuron
 Pendimethalin,Dinitrobenzenes,16,43,27,2031-04-15,,https://activesindex.com/active/pendimethalin
-Penflufen,Anilides,2,6,1,2027-08-09,,https://activesindex.com/active/penflufen
+Penflufen,Anilides,2,5,1,2027-08-09,,https://activesindex.com/active/penflufen
 Penthiopyrad,Anilides,1,2,2,2027-05-25,,https://activesindex.com/active/penthiopyrad
 Pentobarbital Sodium,,8,0,0,,,https://activesindex.com/active/pentobarbital-sodium
 Peppermint Oil,,2,3,3,2030-09-02,,https://activesindex.com/active/peppermint-oil
 Peracetic Acid,Acid-General,0,3,3,,,https://activesindex.com/active/peracetic-acid
-Permethrin,"Pyrethroids, Pyrethrins",25,79,18,2030-10-28,,https://activesindex.com/active/permethrin
+Permethrin,"Pyrethroids, Pyrethrins",25,80,18,2030-10-28,,https://activesindex.com/active/permethrin
 Permethrin (20:80::Cis:Trans),"Pyrethroids, Pyrethrins",1,0,0,,,https://activesindex.com/active/permethrin-20-80-cis-trans
 Permethrin (25:75),Active,0,5,4,2027-08-18,,https://activesindex.com/active/permethrin-25-75
 Permethrin (25:75::Cis:Trans),"Pyrethroids, Pyrethrins",2,66,30,,,https://activesindex.com/active/permethrin-25-75-cis-trans
@@ -1206,14 +1207,14 @@ Prometryn,,13,3,3,,,https://activesindex.com/active/prometryn
 Pron8Ure Concentrate,,1,0,0,,,https://activesindex.com/active/pron8ure-concentrate
 Propachlor,,2,1,1,,,https://activesindex.com/active/propachlor
 Propamocarb,,1,0,0,,,https://activesindex.com/active/propamocarb
-Propamocarb Hydrochloride,Carbamates,3,2,1,2026-12-22,,https://activesindex.com/active/propamocarb-hydrochloride
+Propamocarb Hydrochloride,Carbamates,3,1,1,,,https://activesindex.com/active/propamocarb-hydrochloride
 Propamocarb Present As Monohydrochloride,Carbamate-Methylcarbamate,0,6,5,,Propamocarb,https://activesindex.com/active/propamocarb-present-as-monohydrochloride
 Propanil,,4,4,3,,,https://activesindex.com/active/propanil
 Propaquizafop,,2,3,3,,,https://activesindex.com/active/propaquizafop
 Propargite,,9,7,5,2027-12-19,,https://activesindex.com/active/propargite
 Propiconazole,Triazoles,32,101,51,2030-10-28,,https://activesindex.com/active/propiconazole
 Propineb,,4,4,3,,,https://activesindex.com/active/propineb
-Propionic Acid,Acid-General,0,42,33,,,https://activesindex.com/active/propionic-acid
+Propionic Acid,Acid-General,0,40,33,,,https://activesindex.com/active/propionic-acid
 Propoxur,Carbamates,4,4,1,2030-01-14,,https://activesindex.com/active/propoxur
 Propylene Oxide,,1,0,0,,,https://activesindex.com/active/propylene-oxide
 Propyzamide,Benzamides,18,87,45,2030-04-17,,https://activesindex.com/active/propyzamide
@@ -1225,7 +1226,7 @@ Prothiofos,,3,1,1,,,https://activesindex.com/active/prothiofos
 Pydiflumetofen,"Azoles, Oxazoles, Thiazoles",1,7,1,2030-10-07,,https://activesindex.com/active/pydiflumetofen
 Pymetrozine,Chlorotrianzines,9,3,3,2031-04-15,,https://activesindex.com/active/pymetrozine
 Pymetrozine Technical,,0,1,1,,,https://activesindex.com/active/pymetrozine-technical
-Pyraclostrobin,Methoxyacrylates,23,32,16,2032-10-02,,https://activesindex.com/active/pyraclostrobin
+Pyraclostrobin,Methoxyacrylates,23,34,16,2032-10-02,,https://activesindex.com/active/pyraclostrobin
 Pyraflufen-Ethyl,Phenoxy Acids,5,8,1,2029-03-08,,https://activesindex.com/active/pyraflufen-ethyl
 Pyrantel Pamoate,,4,0,0,,,https://activesindex.com/active/pyrantel-pamoate
 Pyrasulfotole,"Azoles, Oxazoles, Thiazoles",10,12,7,2032-07-19,,https://activesindex.com/active/pyrasulfotole
@@ -1290,7 +1291,7 @@ Silicon Carbide,,1,1,1,,,https://activesindex.com/active/silicon-carbide
 Silver,Mineral-Silver,0,2,2,,,https://activesindex.com/active/silver
 Silver (As The Metal),Element - Silver,0,7,6,,,https://activesindex.com/active/silver-as-the-metal
 Silver As Silver Nitrate,Mineral-Silver,0,2,1,,,https://activesindex.com/active/silver-as-silver-nitrate
-Simazine,,15,77,56,2028-03-03,,https://activesindex.com/active/simazine
+Simazine,,15,76,56,2028-03-03,,https://activesindex.com/active/simazine
 Simazine And Related Triazines,Triazine,0,1,1,,,https://activesindex.com/active/simazine-and-related-triazines
 Sodium 2-Methoxy-5-Nitrophenolate,,1,0,0,,,https://activesindex.com/active/sodium-2-methoxy-5-nitrophenolate
 Sodium 2-Nitrophenolate,,1,0,0,,,https://activesindex.com/active/sodium-2-nitrophenolate
@@ -1325,7 +1326,7 @@ Sodium Propionate,,1,0,0,,,https://activesindex.com/active/sodium-propionate
 Sodium Selenate - Anhydrous,,1,0,0,,,https://activesindex.com/active/sodium-selenate-anhydrous
 Sodium Stannate,,0,1,1,,,https://activesindex.com/active/sodium-stannate
 Sodium Tetraborate Pentahydrate,Mineral-Boron,0,15,8,,,https://activesindex.com/active/sodium-tetraborate-pentahydrate
-Soyal Phospholipids,,0,44,33,2027-05-09,,https://activesindex.com/active/soyal-phospholipids
+Soyal Phospholipids,,0,42,33,2027-05-09,,https://activesindex.com/active/soyal-phospholipids
 Spectinomycin Sulfate,,4,0,0,,,https://activesindex.com/active/spectinomycin-sulfate
 Spectinomycin Sulfate Tetrahyrate,,1,0,0,,,https://activesindex.com/active/spectinomycin-sulfate-tetrahyrate
 Spinetoram,Organic Acids,2,6,2,2031-03-11,,https://activesindex.com/active/spinetoram
@@ -1343,10 +1344,10 @@ Strychnine Alkaloid,,0,1,1,,,https://activesindex.com/active/strychnine-alkaloid
 Sucrose Octa-Acetate,Carbohydrate Derivative,0,1,1,,,https://activesindex.com/active/sucrose-octa-acetate
 Sugars,Food,0,1,1,,,https://activesindex.com/active/sugars
 Sulfamic Acid,Mineral-Sulfur-Acid,0,12,6,,,https://activesindex.com/active/sulfamic-acid
-Sulfometuron-Methyl,,5,24,15,,,https://activesindex.com/active/sulfometuron-methyl
+Sulfometuron-Methyl,,5,25,15,2031-11-02,,https://activesindex.com/active/sulfometuron-methyl
 Sulfosulfuron,,7,23,21,2031-09-02,,https://activesindex.com/active/sulfosulfuron
 Sulfoxaflor,Pyridines,4,2,1,2031-08-25,,https://activesindex.com/active/sulfoxaflor
-Sulfur,Mineral-Sulfur,0,12,10,2029-09-06,,https://activesindex.com/active/sulfur
+Sulfur,Mineral-Sulfur,0,13,10,2031-11-03,,https://activesindex.com/active/sulfur
 Sulfur (S) As Wettable Sulfur,Mineral-Sulfur,0,13,12,2027-07-12,,https://activesindex.com/active/sulfur-s-as-wettable-sulfur
 Sulfur (S) Present As Polysulfide Sulfur,Mineral-Sulfur,0,8,7,,,https://activesindex.com/active/sulfur-s-present-as-polysulfide-sulfur
 Sulfur (S) Present As Powdered Sulfur,Mineral-Sulfur,0,2,2,,,https://activesindex.com/active/sulfur-s-present-as-powdered-sulfur
@@ -1375,7 +1376,7 @@ Tea Tree Oil,Oil-Plant Extract,0,6,5,,,https://activesindex.com/active/tea-tree-
 Tebuconazole,Triazoles,39,148,65,2031-02-05,,https://activesindex.com/active/tebuconazole
 Tebufenozide,Benzamides,2,2,2,,,https://activesindex.com/active/tebufenozide
 Tebufenpyrad,Pyrazole,2,1,1,,,https://activesindex.com/active/tebufenpyrad
-Tebuthiuron,Urea Derivatives,15,34,21,2029-06-25,,https://activesindex.com/active/tebuthiuron
+Tebuthiuron,Urea Derivatives,15,33,21,2029-06-25,,https://activesindex.com/active/tebuthiuron
 Tefluthrin,"Pyrethroids, Pyrethrins",1,0,0,,,https://activesindex.com/active/tefluthrin
 Temephos,Thiophosphates,3,3,2,2029-09-27,,https://activesindex.com/active/temephos
 Tepraloxydim,Cyclohexanedione Oximes,1,0,0,,,https://activesindex.com/active/tepraloxydim
@@ -1400,11 +1401,11 @@ Thiacetarsamide Sodium,,1,0,0,,,https://activesindex.com/active/thiacetarsamide-
 Thiacloprid,Pyridines,8,4,4,,,https://activesindex.com/active/thiacloprid
 Thiamethoxam,Guanidines,27,41,19,2031-06-05,,https://activesindex.com/active/thiamethoxam
 Thiazopyr,,1,0,0,,,https://activesindex.com/active/thiazopyr
-Thidiazuron,Urea Derivatives,15,29,22,2030-10-21,,https://activesindex.com/active/thidiazuron
+Thidiazuron,Urea Derivatives,15,28,22,2030-10-21,,https://activesindex.com/active/thidiazuron
 Thiobencarb,Carbamates,3,4,4,,,https://activesindex.com/active/thiobencarb
 Thiodicarb,Carbamates,6,4,4,,,https://activesindex.com/active/thiodicarb
 Thiophanate-Methyl,Biscarbamates,4,4,3,2028-09-22,,https://activesindex.com/active/thiophanate-methyl
-Thiram,Biscarbamates,7,40,16,,,https://activesindex.com/active/thiram
+Thiram,Biscarbamates,7,46,16,,,https://activesindex.com/active/thiram
 Thymol,"Oils, Minerals, Vegetable",1,2,1,2031-03-25,,https://activesindex.com/active/thymol
 Tiafenacil,,1,1,1,2031-04-08,,https://activesindex.com/active/tiafenacil
 Tiletamine Hydrochloride,,1,0,0,,,https://activesindex.com/active/tiletamine-hydrochloride
@@ -1416,7 +1417,7 @@ Tolclofos-Methyl,,3,4,2,,,https://activesindex.com/active/tolclofos-methyl
 Tolylfluanid,,1,0,0,,,https://activesindex.com/active/tolylfluanid
 Topramezone,,10,1,1,2028-02-01,,https://activesindex.com/active/topramezone
 Tralkoxydim,Cyclohexanedione Oximes,7,23,22,,,https://activesindex.com/active/tralkoxydim
-Transfluthrin,"Pyrethroids, Pyrethrins",7,38,10,2030-06-03,,https://activesindex.com/active/transfluthrin
+Transfluthrin,"Pyrethroids, Pyrethrins",7,39,10,2031-11-04,,https://activesindex.com/active/transfluthrin
 Tri-Allate,Carbamates,7,32,26,2028-09-09,,https://activesindex.com/active/tri-allate
 Triadimefon,Triazoles,7,17,11,,,https://activesindex.com/active/triadimefon
 Triadimenol,Triazoles,9,31,17,2030-05-16,,https://activesindex.com/active/triadimenol
@@ -1429,27 +1430,27 @@ Trichlorfon (An Anticholinesterase Compound),,0,2,1,2028-01-05,,https://activesi
 Trichloroisocyanuric Acid,Mineral-Chlorine-Acid,0,1,1,,,https://activesindex.com/active/trichloroisocyanuric-acid
 Trichoderma Harzianum,Biological,1,3,1,,,https://activesindex.com/active/trichoderma-harzianum
 Triclopyr,Pyridines,4,5,5,2028-03-24,,https://activesindex.com/active/triclopyr
-Triclopyr As The Triethylamine Salt,Pyridine-Pyridinoxy,0,13,8,,,https://activesindex.com/active/triclopyr-as-the-triethylamine-salt
+Triclopyr As The Triethylamine Salt,Pyridine-Pyridinoxy,0,12,8,,,https://activesindex.com/active/triclopyr-as-the-triethylamine-salt
 Triclopyr Butoxyethyl Ester,Pyridines,28,8,7,2029-04-04,,https://activesindex.com/active/triclopyr-butoxyethyl-ester
 Triclopyr Present As The Butoxyethanol Ester,Pyridine-Pyridinoxy,0,12,11,,Triclopyr,https://activesindex.com/active/triclopyr-present-as-the-butoxyethanol-ester
-Triclopyr Present As The Butoxyethyl Ester,Pyridine-Pyridinoxy,0,100,54,2031-02-09,Triclopyr,https://activesindex.com/active/triclopyr-present-as-the-butoxyethyl-ester
+Triclopyr Present As The Butoxyethyl Ester,Pyridine-Pyridinoxy,0,101,55,2031-02-09,Triclopyr,https://activesindex.com/active/triclopyr-present-as-the-butoxyethyl-ester
 Triclopyr Present As The Triethylamine Salt,,0,2,2,,Triclopyr,https://activesindex.com/active/triclopyr-present-as-the-triethylamine-salt
 Triclopyr-Triethylamine,Pyridines,1,0,0,,,https://activesindex.com/active/triclopyr-triethylamine
 Triclosan,,1,13,4,2027-04-26,,https://activesindex.com/active/triclosan
 Tridemorph,,1,0,0,,,https://activesindex.com/active/tridemorph
 Triethanolamine,Amine/Amide,0,1,1,,,https://activesindex.com/active/triethanolamine
-Trifloxystrobin,Methoxyacrylates,17,11,6,2031-03-05,,https://activesindex.com/active/trifloxystrobin
+Trifloxystrobin,Methoxyacrylates,17,12,7,2031-03-05,,https://activesindex.com/active/trifloxystrobin
 Trifloxysulfuron Sodium,Methoxyacrylates,6,2,2,,,https://activesindex.com/active/trifloxysulfuron-sodium
 Trifludimoxazin,,1,1,1,2030-05-28,,https://activesindex.com/active/trifludimoxazin
 Triflumizole,,1,0,0,,,https://activesindex.com/active/triflumizole
 Triflumuron,,4,22,12,,,https://activesindex.com/active/triflumuron
-Trifluralin,Dinitrobenzenes,32,86,54,2030-06-19,,https://activesindex.com/active/trifluralin
+Trifluralin,Dinitrobenzenes,32,84,54,2030-06-19,,https://activesindex.com/active/trifluralin
 Triforine,Diazines,2,3,3,,,https://activesindex.com/active/triforine
 Trinexapac-Ethyl,Organic Acids,10,24,10,2030-07-01,,https://activesindex.com/active/trinexapac-ethyl
 Tripelennamine Hydrochloride,,1,0,0,,,https://activesindex.com/active/tripelennamine-hydrochloride
 Trisiloxane Ethoxylate,Emulsifiers & Surfactants-Noni,0,3,3,,,https://activesindex.com/active/trisiloxane-ethoxylate
 Trisodium Citrate,,1,0,0,,,https://activesindex.com/active/trisodium-citrate
-Triticonazole,Triazoles,3,4,3,2030-06-20,,https://activesindex.com/active/triticonazole
+Triticonazole,Triazoles,3,5,3,2031-11-04,,https://activesindex.com/active/triticonazole
 Tryptophan-L,,1,0,0,,,https://activesindex.com/active/tryptophan-l
 Tylosin Phosphate,,11,0,0,,,https://activesindex.com/active/tylosin-phosphate
 Undecenoic Acid,,1,0,0,,,https://activesindex.com/active/undecenoic-acid
@@ -1459,7 +1460,7 @@ Urea,,1,0,0,,,https://activesindex.com/active/urea
 Vedaprofen,,1,0,0,,,https://activesindex.com/active/vedaprofen
 Vegetable Oil,Oil-Plant Extract,0,2,2,,,https://activesindex.com/active/vegetable-oil
 Vegetable Oil (Emulsifiable),Oil-Plant Extract,0,6,5,,,https://activesindex.com/active/vegetable-oil-emulsifiable
-Vegetable Oil Ester,Oil-Plant Extract,0,6,4,2029-03-18,,https://activesindex.com/active/vegetable-oil-ester
+Vegetable Oil Ester,Oil-Plant Extract,0,7,4,2029-03-18,,https://activesindex.com/active/vegetable-oil-ester
 Velagliflozin L-Proline Monohydrate,,1,0,0,,,https://activesindex.com/active/velagliflozin-l-proline-monohydrate
 Vernolate,,1,0,0,,,https://activesindex.com/active/vernolate
 Vibriosis - Campylobacter Foetus,Biological,1,0,0,,,https://activesindex.com/active/vibriosis-campylobacter-foetus
@@ -1480,11 +1481,11 @@ Zinc Naphthenate,Mineral-Zinc,0,2,1,,,https://activesindex.com/active/zinc-napht
 Zinc Phosphide,"Inorganic, Others",8,24,15,2030-12-15,,https://activesindex.com/active/zinc-phosphide
 Zinc Present As Zinc Naphthenate,Mineral-Zinc,0,2,2,,,https://activesindex.com/active/zinc-present-as-zinc-naphthenate
 Zinc Present As Zinc Sulphate Monohydrate,,0,3,2,2028-12-06,,https://activesindex.com/active/zinc-present-as-zinc-sulphate-monohydrate
-Zinc Pyrithione,,5,30,4,2028-03-30,,https://activesindex.com/active/zinc-pyrithione
+Zinc Pyrithione,,5,34,4,2028-03-30,,https://activesindex.com/active/zinc-pyrithione
 Zinc Sulfate Heptahydrate,,1,0,0,,,https://activesindex.com/active/zinc-sulfate-heptahydrate
 Zinc Sulphate Monohydrate,,1,0,0,,,https://activesindex.com/active/zinc-sulphate-monohydrate
-Zineb,,2,41,4,2028-08-09,,https://activesindex.com/active/zineb
+Zineb,,2,40,4,2028-08-09,,https://activesindex.com/active/zineb
 Ziram,Dithiocarbamates,2,2,2,,,https://activesindex.com/active/ziram
 Zolazepam Hydrochloride,,1,0,0,,,https://activesindex.com/active/zolazepam-hydrochloride
 
-"Source: APVMA PubCRIS export downloaded 2026-10-31, CC BY 3.0 AU. Compiled by Actives Index Australia (https://activesindex.com). Not affiliated with the APVMA."
+"Source: APVMA PubCRIS export downloaded 2026-11-09, CC BY 3.0 AU. Compiled by Actives Index Australia (https://activesindex.com). Not affiliated with the APVMA."
