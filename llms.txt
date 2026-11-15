@@ -1,8 +1,8 @@
 # Actives Index Australia
 
-> Independent index of every agricultural active constituent in the Australian APVMA register: approved sources (active constituent approvals), registrants, registered products, crops and targets on labels, and data protection end dates. Rebuilt from the APVMA PubCRIS public export (CC BY 3.0 AU). Data as of 2026-11-09. Not affiliated with the APVMA.
+> Independent index of every agricultural active constituent in the Australian APVMA register: approved sources (active constituent approvals), registrants, registered products, crops and targets on labels, and data protection end dates. Rebuilt from the APVMA PubCRIS public export (CC BY 3.0 AU). Data as of 2026-11-16. Not affiliated with the APVMA.
 
-Facts to keep when citing: an approval holder is not necessarily the manufacturer (PubCRIS does not publish manufacturing sites); data protection covers specific data, not the active; nothing here is use advice, the label applies. Cite as "Actives Index Australia, from APVMA PubCRIS data, 2026-11-09".
+Facts to keep when citing: an approval holder is not necessarily the manufacturer (PubCRIS does not publish manufacturing sites); data protection covers specific data, not the active; nothing here is use advice, the label applies. Cite as "Actives Index Australia, from APVMA PubCRIS data, 2026-11-16".
 
 ## Answers by question
 - [Actives with only 1 to 3 approved sources](https://activesindex.com/lists/few-sources): 638 actives
@@ -18,16 +18,16 @@ URL pattern: https://activesindex.com/active/<common-name>, for example https://
 - [Bifenthrin](https://activesindex.com/active/bifenthrin): 29 approved sources, 265 products
 - [Glyphosate Present As The Isopropylamine Salt](https://activesindex.com/active/glyphosate-present-as-the-isopropylamine-salt): 0 approved sources, 251 products
 - [Imidacloprid](https://activesindex.com/active/imidacloprid): 43 approved sources, 173 products
-- [Piperonyl Butoxide](https://activesindex.com/active/piperonyl-butoxide): 11 approved sources, 172 products
-- [MCPA Present As The Dimethylamine Salt](https://activesindex.com/active/mcpa-present-as-the-dimethylamine-salt): 0 approved sources, 158 products
+- [Piperonyl Butoxide](https://activesindex.com/active/piperonyl-butoxide): 12 approved sources, 172 products
+- [MCPA Present As The Dimethylamine Salt](https://activesindex.com/active/mcpa-present-as-the-dimethylamine-salt): 0 approved sources, 160 products
 - [Tebuconazole](https://activesindex.com/active/tebuconazole): 39 approved sources, 148 products
-- [Dicamba Present As The Dimethylamine Salt](https://activesindex.com/active/dicamba-present-as-the-dimethylamine-salt): 0 approved sources, 140 products
+- [Dicamba Present As The Dimethylamine Salt](https://activesindex.com/active/dicamba-present-as-the-dimethylamine-salt): 0 approved sources, 141 products
 - [Diflufenican](https://activesindex.com/active/diflufenican): 25 approved sources, 137 products
 - [Benzalkonium Chloride](https://activesindex.com/active/benzalkonium-chloride): 0 approved sources, 127 products
 - [Paraquat Present As Paraquat Dichloride](https://activesindex.com/active/paraquat-present-as-paraquat-dichloride): 0 approved sources, 122 products
 - [Azoxystrobin](https://activesindex.com/active/azoxystrobin): 38 approved sources, 114 products
 - [Fipronil](https://activesindex.com/active/fipronil): 36 approved sources, 113 products
-- [Clethodim](https://activesindex.com/active/clethodim): 31 approved sources, 103 products
+- [Clethodim](https://activesindex.com/active/clethodim): 31 approved sources, 105 products
 - [Propiconazole](https://activesindex.com/active/propiconazole): 32 approved sources, 101 products
 - [Triclopyr Present As The Butoxyethyl Ester](https://activesindex.com/active/triclopyr-present-as-the-butoxyethyl-ester): 0 approved sources, 101 products
 

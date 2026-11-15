@@ -16,7 +16,7 @@
 "group": "Pheromones",
 "sources": 7,
 "products": 23,
-"registrants": 9,
+"registrants": 8,
 "prot_until": "2030-04-29"
 },
 {
@@ -144,7 +144,7 @@
 "name": "2,4-D",
 "slug": "2-4-d",
 "group": "Phenoxy Acids",
-"sources": 23,
+"sources": 24,
 "products": 3,
 "registrants": 3,
 "prot_until": ""
@@ -505,8 +505,8 @@
 "slug": "abamectin",
 "group": "Organic Acids",
 "sources": 42,
-"products": 62,
-"registrants": 42,
+"products": 63,
+"registrants": 43,
 "prot_until": "2031-11-06"
 },
 {
@@ -2865,9 +2865,9 @@
 "slug": "carboxin",
 "group": "Azoles, Oxazoles, Thiazoles",
 "sources": 4,
-"products": 5,
-"registrants": 1,
-"prot_until": ""
+"products": 6,
+"registrants": 2,
+"prot_until": "2031-11-09"
 },
 {
 "n": "CARBOXYLIC ACID",
@@ -3535,7 +3535,7 @@
 "slug": "clethodim",
 "group": "Cyclohexanedione Oximes",
 "sources": 31,
-"products": 103,
+"products": 105,
 "registrants": 59,
 "prot_until": "2029-10-11"
 },
@@ -4785,9 +4785,9 @@
 "slug": "diafenthiuron",
 "group": "Urea Derivatives",
 "sources": 11,
-"products": 12,
-"registrants": 8,
-"prot_until": "2030-05-02"
+"products": 13,
+"registrants": 9,
+"prot_until": "2031-11-06"
 },
 {
 "n": "DIATOMACEOUS EARTH",
@@ -4915,7 +4915,7 @@
 "slug": "dicamba-present-as-the-dimethylamine-salt",
 "group": "Benzoic Acid-Arylaliphatic",
 "sources": 0,
-"products": 140,
+"products": 141,
 "registrants": 47,
 "prot_until": "2029-12-24"
 },
@@ -5315,9 +5315,9 @@
 "slug": "dinotefuran",
 "group": "Guanidines",
 "sources": 9,
-"products": 7,
-"registrants": 3,
-"prot_until": "2031-01-21"
+"products": 8,
+"registrants": 4,
+"prot_until": "2031-11-06"
 },
 {
 "n": "DIPHACINONE",
@@ -5554,7 +5554,7 @@
 "name": "Dodine",
 "slug": "dodine",
 "group": "Guanidines",
-"sources": 6,
+"sources": 7,
 "products": 3,
 "registrants": 3,
 "prot_until": "2027-02-11"
@@ -6545,9 +6545,9 @@
 "slug": "flumioxazin",
 "group": "Anilides",
 "sources": 12,
-"products": 35,
+"products": 36,
 "registrants": 19,
-"prot_until": "2031-04-30"
+"prot_until": "2031-11-05"
 },
 {
 "n": "FLUOMETURON",
@@ -6577,7 +6577,7 @@
 "sources": 20,
 "products": 7,
 "registrants": 3,
-"prot_until": "2031-03-05"
+"prot_until": "2031-11-10"
 },
 {
 "n": "FLUORINE AS SODIUM FLUORIDE",
@@ -6685,7 +6685,7 @@
 "slug": "fluroxypyr-as-the-methyl-heptyl-ester",
 "group": "Pyridine-Pyridinoxy",
 "sources": 0,
-"products": 78,
+"products": 79,
 "registrants": 45,
 "prot_until": "2031-01-16"
 },
@@ -6947,7 +6947,7 @@
 "sources": 37,
 "products": 84,
 "registrants": 62,
-"prot_until": "2030-09-18"
+"prot_until": "2031-11-09"
 },
 {
 "n": "GLUFOSINATE-AMMONIUM (MANUFACTURING CONCENTRATE)",
@@ -8075,9 +8075,9 @@
 "slug": "ipconazole",
 "group": "Triazoles",
 "sources": 4,
-"products": 2,
-"registrants": 1,
-"prot_until": ""
+"products": 3,
+"registrants": 2,
+"prot_until": "2031-11-09"
 },
 {
 "n": "IPFLUFENOQUIN",
@@ -8655,7 +8655,7 @@
 "slug": "mcpa-present-as-the-2-ethyl-hexyl-ester",
 "group": "Phenoxy Acids",
 "sources": 2,
-"products": 55,
+"products": 56,
 "registrants": 38,
 "prot_until": "2030-03-03"
 },
@@ -8675,7 +8675,7 @@
 "slug": "mcpa-present-as-the-dimethylamine-salt",
 "group": "Phenoxy Acids-MCPA-Amine",
 "sources": 0,
-"products": 158,
+"products": 160,
 "registrants": 53,
 "prot_until": "2029-12-24"
 },
@@ -8944,7 +8944,7 @@
 "name": "Mandipropamid",
 "slug": "mandipropamid",
 "group": "Amides",
-"sources": 5,
+"sources": 6,
 "products": 5,
 "registrants": 4,
 "prot_until": "2030-09-12"
@@ -9175,9 +9175,9 @@
 "slug": "metalaxyl",
 "group": "Anilides",
 "sources": 13,
-"products": 30,
+"products": 31,
 "registrants": 15,
-"prot_until": "2031-11-04"
+"prot_until": "2031-11-09"
 },
 {
 "n": "METALAXYL M",
@@ -9375,7 +9375,7 @@
 "slug": "methomyl",
 "group": "Oximes-carbamates",
 "sources": 11,
-"products": 30,
+"products": 31,
 "registrants": 21,
 "prot_until": "2029-08-30"
 },
@@ -9397,7 +9397,7 @@
 "sources": 11,
 "products": 10,
 "registrants": 9,
-"prot_until": "2031-05-25"
+"prot_until": "2031-11-11"
 },
 {
 "n": "METHYL & ETHYL ESTERS OF FREE FATTY ACIDS FROM CANOLA OI",
@@ -10455,7 +10455,7 @@
 "slug": "octyl-phenol-ethoxylate",
 "group": "Emulsifiers & Surfactants-Noni",
 "sources": 0,
-"products": 12,
+"products": 13,
 "registrants": 10,
 "prot_until": ""
 },
@@ -10744,7 +10744,7 @@
 "name": "Paclobutrazol",
 "slug": "paclobutrazol",
 "group": "Triazoles",
-"sources": 13,
+"sources": 14,
 "products": 36,
 "registrants": 25,
 "prot_until": "2029-02-28"
@@ -11444,8 +11444,8 @@
 "name": "Picaridin",
 "slug": "picaridin",
 "group": "",
-"sources": 2,
-"products": 25,
+"sources": 3,
+"products": 26,
 "registrants": 7,
 "prot_until": "2029-07-15"
 },
@@ -11575,9 +11575,9 @@
 "slug": "pine-oil",
 "group": "Oil-Plant Extract",
 "sources": 0,
-"products": 6,
-"registrants": 3,
-"prot_until": "2027-07-20"
+"products": 7,
+"registrants": 4,
+"prot_until": "2031-11-10"
 },
 {
 "n": "PINOXADEN",
@@ -11604,7 +11604,7 @@
 "name": "Piperonyl Butoxide",
 "slug": "piperonyl-butoxide",
 "group": "Others",
-"sources": 11,
+"sources": 12,
 "products": 172,
 "registrants": 65,
 "prot_until": "2032-10-05"
@@ -12435,8 +12435,8 @@
 "slug": "pyroxasulfone",
 "group": "Azoles, Oxazoles, Thiazoles",
 "sources": 49,
-"products": 74,
-"registrants": 42,
+"products": 75,
+"registrants": 43,
 "prot_until": "2032-07-19"
 },
 {
@@ -13307,7 +13307,7 @@
 "sources": 2,
 "products": 6,
 "registrants": 2,
-"prot_until": "2031-03-11"
+"prot_until": "2031-11-11"
 },
 {
 "n": "SPINOSAD",
@@ -13315,8 +13315,8 @@
 "slug": "spinosad",
 "group": "",
 "sources": 5,
-"products": 11,
-"registrants": 8,
+"products": 13,
+"registrants": 9,
 "prot_until": "2036-01-08"
 },
 {
@@ -13525,8 +13525,8 @@
 "slug": "sulfur-as-elemental-sulfur",
 "group": "Mineral-Sulfur",
 "sources": 0,
-"products": 11,
-"registrants": 8,
+"products": 12,
+"registrants": 9,
 "prot_until": ""
 },
 {
