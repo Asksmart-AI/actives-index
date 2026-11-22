@@ -1,8 +1,8 @@
 # Actives Index Australia
 
-> Independent index of every agricultural active constituent in the Australian APVMA register: approved sources (active constituent approvals), registrants, registered products, crops and targets on labels, and data protection end dates. Rebuilt from the APVMA PubCRIS public export (CC BY 3.0 AU). Data as of 2026-11-16. Not affiliated with the APVMA.
+> Independent index of every agricultural active constituent in the Australian APVMA register: approved sources (active constituent approvals), registrants, registered products, crops and targets on labels, and data protection end dates. Rebuilt from the APVMA PubCRIS public export (CC BY 3.0 AU). Data as of 2026-11-23. Not affiliated with the APVMA.
 
-Facts to keep when citing: an approval holder is not necessarily the manufacturer (PubCRIS does not publish manufacturing sites); data protection covers specific data, not the active; nothing here is use advice, the label applies. Cite as "Actives Index Australia, from APVMA PubCRIS data, 2026-11-16".
+Facts to keep when citing: an approval holder is not necessarily the manufacturer (PubCRIS does not publish manufacturing sites); data protection covers specific data, not the active; nothing here is use advice, the label applies. Cite as "Actives Index Australia, from APVMA PubCRIS data, 2026-11-23".
 
 ## Answers by question
 - [Actives with only 1 to 3 approved sources](https://activesindex.com/lists/few-sources): 638 actives
@@ -25,10 +25,10 @@ URL pattern: https://activesindex.com/active/<common-name>, for example https://
 - [Diflufenican](https://activesindex.com/active/diflufenican): 25 approved sources, 137 products
 - [Benzalkonium Chloride](https://activesindex.com/active/benzalkonium-chloride): 0 approved sources, 127 products
 - [Paraquat Present As Paraquat Dichloride](https://activesindex.com/active/paraquat-present-as-paraquat-dichloride): 0 approved sources, 122 products
+- [Fipronil](https://activesindex.com/active/fipronil): 36 approved sources, 115 products
 - [Azoxystrobin](https://activesindex.com/active/azoxystrobin): 38 approved sources, 114 products
-- [Fipronil](https://activesindex.com/active/fipronil): 36 approved sources, 113 products
 - [Clethodim](https://activesindex.com/active/clethodim): 31 approved sources, 105 products
-- [Propiconazole](https://activesindex.com/active/propiconazole): 32 approved sources, 101 products
+- [Propiconazole](https://activesindex.com/active/propiconazole): 32 approved sources, 102 products
 - [Triclopyr Present As The Butoxyethyl Ester](https://activesindex.com/active/triclopyr-present-as-the-butoxyethyl-ester): 0 approved sources, 101 products
 
 ## Data

@@ -1915,9 +1915,9 @@
 "slug": "bifenazate",
 "group": "Carbamates",
 "sources": 6,
-"products": 9,
+"products": 10,
 "registrants": 7,
-"prot_until": "2030-10-01"
+"prot_until": "2034-05-16"
 },
 {
 "n": "BIFENTHRIN",
@@ -2954,7 +2954,7 @@
 "name": "Cefovecin Sodium",
 "slug": "cefovecin-sodium",
 "group": "Antibiotic",
-"sources": 1,
+"sources": 2,
 "products": 0,
 "registrants": 0,
 "prot_until": ""
@@ -4435,9 +4435,9 @@
 "slug": "cyazofamid",
 "group": "Urea Derivatives",
 "sources": 5,
-"products": 6,
+"products": 7,
 "registrants": 3,
-"prot_until": "2029-12-11"
+"prot_until": "2031-11-17"
 },
 {
 "n": "CYCLANILIDE",
@@ -5315,8 +5315,8 @@
 "slug": "dinotefuran",
 "group": "Guanidines",
 "sources": 9,
-"products": 8,
-"registrants": 4,
+"products": 9,
+"registrants": 5,
 "prot_until": "2031-11-06"
 },
 {
@@ -6335,7 +6335,7 @@
 "slug": "fipronil",
 "group": "Pyrazole",
 "sources": 36,
-"products": 113,
+"products": 115,
 "registrants": 48,
 "prot_until": "2031-03-27"
 },
@@ -6945,7 +6945,7 @@
 "slug": "glufosinate-ammonium",
 "group": "Phosphonic Acids, Phosphinic Acids",
 "sources": 37,
-"products": 84,
+"products": 85,
 "registrants": 62,
 "prot_until": "2031-11-09"
 },
@@ -7905,7 +7905,7 @@
 "slug": "indoxacarb-75-25",
 "group": "Active",
 "sources": 0,
-"products": 16,
+"products": 17,
 "registrants": 6,
 "prot_until": "2031-08-14"
 },
@@ -9205,7 +9205,7 @@
 "slug": "metaldehyde",
 "group": "Aldehydes",
 "sources": 9,
-"products": 33,
+"products": 34,
 "registrants": 22,
 "prot_until": "2030-06-18"
 },
@@ -11057,7 +11057,7 @@
 "sources": 0,
 "products": 15,
 "registrants": 13,
-"prot_until": "2026-11-19"
+"prot_until": ""
 },
 {
 "n": "PERMETHRIN 25:75",
@@ -12135,9 +12135,9 @@
 "slug": "propiconazole",
 "group": "Triazoles",
 "sources": 32,
-"products": 101,
-"registrants": 51,
-"prot_until": "2030-10-28"
+"products": 102,
+"registrants": 52,
+"prot_until": "2032-05-16"
 },
 {
 "n": "PROPINEB",
@@ -12225,9 +12225,9 @@
 "slug": "prothioconazole",
 "group": "Triazoles",
 "sources": 40,
-"products": 45,
+"products": 46,
 "registrants": 28,
-"prot_until": "2031-04-28"
+"prot_until": "2032-05-18"
 },
 {
 "n": "PROTHIOFOS",
@@ -12745,8 +12745,8 @@
 "slug": "s-metolachlor",
 "group": "Active",
 "sources": 11,
-"products": 52,
-"registrants": 35,
+"products": 53,
+"registrants": 36,
 "prot_until": "2030-11-07"
 },
 {
@@ -13835,7 +13835,7 @@
 "slug": "terbuthylazine",
 "group": "Triazines, Tetrazines",
 "sources": 11,
-"products": 33,
+"products": 34,
 "registrants": 22,
 "prot_until": "2029-12-23"
 },
@@ -13967,7 +13967,7 @@
 "sources": 1,
 "products": 3,
 "registrants": 2,
-"prot_until": "2031-08-19"
+"prot_until": "2031-11-18"
 },
 {
 "n": "THIABENDAZOLE",
@@ -14457,7 +14457,7 @@
 "sources": 32,
 "products": 84,
 "registrants": 54,
-"prot_until": "2030-06-19"
+"prot_until": "2031-11-16"
 },
 {
 "n": "TRIFORINE",
